@@ -95,3 +95,20 @@ It is also possible to read WAV files. This is compatible with any WAV file, 16 
 For WAV files exported from SatDump and SDR Console the `-P` options will automatically extract the correct parameters from the filename.
 
 The output spectrograms can be viewed and analysed using `rfplot`.
+
+Automated Pipeline (LAPAN-A2)
+-----------------------------
+This repository now includes a fully automated, headless background service (`pipeline/`) specifically designed to streamline LAPAN-A2 satellite tracking and TLE optimization.
+
+Key features include:
+* Headless extraction of Doppler curves from waterfall images using OpenCV.
+* Automatic rejection of terrestrial noise and interference based on shape validation.
+* End-to-end orbital element (TLE) optimization using the `rffit` global fitting engine.
+* Automated tracking data management and background scheduling via `cron`.
+
+### Setting up the Pipeline
+To initialize the automated pipeline:
+1. Navigate to the `pipeline/` directory: `cd pipeline`
+2. Ensure the required Python dependencies are installed (e.g., `opencv-python`, `numpy`).
+3. Run the setup script to establish the background cron job: `./cron_setup.sh`
+4. The pipeline will now run automatically. Logs will be recorded in `pipeline/logs/`, and optimized TLEs and tracking data will be outputted to `pipeline/data/`.
