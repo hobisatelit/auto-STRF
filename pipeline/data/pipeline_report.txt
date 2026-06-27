@@ -1,0 +1,15 @@
+============================================================
+STRF Automation Pipeline — Ringkasan Hasil
+Waktu: 2026-06-26T20:12:55+00:00 UTC
+============================================================
+Total observasi diproses  : 1
+Berhasil (RMSE turun)     : 1
+Tidak berhasil            : 0
+
+RMSE rata-rata sebelum    : 0.134 kHz
+RMSE rata-rata sesudah    : 0.035 kHz
+Penurunan RMSE rata-rata  : 73.6%
+
+Detail per observasi:
+------------------------------------------------------------
+  ✅ 14386228_fitted: RMSE 0.133542 → 0.035297 kHz (1546 titik)

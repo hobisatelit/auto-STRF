@@ -1,0 +1,90 @@
+{
+  "id": 14384918,
+  "start": "2026-06-26T18:11:45Z",
+  "end": "2026-06-26T18:17:52Z",
+  "ground_station": 4460,
+  "transmitter": "jjNQUqaaSuehNx5qVGzQwY",
+  "norad_cat_id": 40908,
+  "payload": "https://network-satnogs.freetls.fastly.net/media/data_obs/2026/6/26/18/14384918/satnogs_14384918_2026-06-26T18-11-45.ogg",
+  "waterfall": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14384918/waterfall_14384918_2026-06-26T18-11-45.png",
+  "demoddata": [
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14384918/data_14384918_2026-06-26T18-16-01_g1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14384918/data_14384918_2026-06-26T18-16-01_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14384918/data_14384918_2026-06-26T18-15-32_g1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14384918/data_14384918_2026-06-26T18-15-32_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14384918/data_14384918_2026-06-26T18-15-16_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14384918/data_14384918_2026-06-26T18-15-03_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14384918/data_14384918_2026-06-26T18-14-33_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14384918/data_14384918_2026-06-26T18-14-32_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14384918/data_14384918_2026-06-26T18-14-26_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14384918/data_14384918_2026-06-26T18-14-03_g1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14384918/data_14384918_2026-06-26T18-14-03_g0"
+    }
+  ],
+  "station_name": "Sofia SAT Club - Bay Ivan",
+  "station_lat": 42.99996628871616,
+  "station_lng": 24.930953710839745,
+  "station_alt": 410,
+  "vetted_status": "good",
+  "vetted_user": null,
+  "vetted_datetime": null,
+  "archived": false,
+  "archive_url": null,
+  "client_version": "1.9.3+5.g4eedaa1",
+  "client_metadata": "{\"radio\": {\"name\": \"gr-satnogs\", \"version\": \"v2.3-compat-xxx-v2.3.5.0\", \"parameters\": {\"soapy-rx-device\": \"driver=sdrplay\", \"samp-rate-rx\": \"2e6\", \"rx-freq\": \"437225000\", \"file-path\": \"/tmp/.satnogs/data/receiving_satnogs_14384918_2026-06-26T18-11-45.out\", \"waterfall-file-path\": \"/tmp/.satnogs/data/receiving_waterfall_14384918_2026-06-26T18-11-45.dat\", \"decoded-data-file-path\": \"/tmp/.satnogs/data/data_14384918\", \"doppler-correction-per-sec\": null, \"lo-offset\": null, \"ppm\": \"0\", \"rigctl-host\": \"rigctld\", \"rigctl-port\": \"4532\", \"gain-mode\": \"Settings Field\", \"gain\": null, \"antenna\": \"Antenna A\", \"dev-args\": null, \"stream-args\": null, \"tune-args\": null, \"other-settings\": \"RFGR=0\", \"dc-removal\": null, \"bb-freq\": null, \"bw\": null, \"enable-iq-dump\": \"1\", \"iq-file-path\": \"/srv/iq/iq\", \"udp-dump-host\": \"0.0.0.0\", \"udp-dump-port\": 57356, \"wpm\": null, \"baudrate\": \"4800\", \"framing\": \"ax25\"}}, \"latitude\": 42.99996628871616, \"longitude\": 24.930953710839745, \"elevation\": 410, \"frequency\": 437225000}",
+  "status": "good",
+  "waterfall_status": "unknown",
+  "waterfall_status_user": null,
+  "waterfall_status_datetime": null,
+  "rise_azimuth": 189.0,
+  "set_azimuth": 333.0,
+  "max_altitude": 40.0,
+  "transmitter_uuid": "jjNQUqaaSuehNx5qVGzQwY",
+  "transmitter_description": "GFSK Telemetry",
+  "transmitter_type": "Transmitter",
+  "transmitter_uplink_low": null,
+  "transmitter_uplink_high": null,
+  "transmitter_uplink_drift": null,
+  "transmitter_downlink_low": 437225000,
+  "transmitter_downlink_high": null,
+  "transmitter_downlink_drift": null,
+  "transmitter_mode": "GFSK",
+  "transmitter_invert": false,
+  "transmitter_baud": 4800.0,
+  "transmitter_updated": "2019-04-18T05:39:53.343316Z",
+  "transmitter_status": "active",
+  "tle0": "0 LILACSAT 2",
+  "tle1": "1 40908U 15049K   26177.23677084  .00018312  00000-0  30848-3 0  9991",
+  "tle2": "2 40908  97.4639 214.4230 0006379 204.9181 155.1764 15.51731803597157",
+  "tle_source": "Space-Track.org",
+  "center_frequency": null,
+  "observer": "antzi",
+  "observation_frequency": 437225000,
+  "transmitter_unconfirmed": false,
+  "sat_id": "AHVS-7983-8710-8819-8034",
+  "_local_waterfall_path": "/home/verdantfoster/strf-main/pipeline/data/waterfall/14384918.png",
+  "_local_metadata_path": "/home/verdantfoster/strf-main/pipeline/data/metadata/14384918.json",
+  "_local_image_width": 832,
+  "_local_image_height": 1603
+}

@@ -1,0 +1,111 @@
+{
+  "id": 14386297,
+  "start": "2026-06-26T19:25:17Z",
+  "end": "2026-06-26T19:38:01Z",
+  "ground_station": 4022,
+  "transmitter": "jdXkyGUzmsXR8XVUnDkk9s",
+  "norad_cat_id": 61740,
+  "payload": "https://network-satnogs.freetls.fastly.net/media/data_obs/2026/6/26/19/14386297/satnogs_14386297_2026-06-26T19-25-17.ogg",
+  "waterfall": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14386297/waterfall_14386297_2026-06-26T19-25-17.png",
+  "demoddata": [
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14386297/data_14386297_2026-06-26T19-35-16_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14386297/data_14386297_2026-06-26T19-34-46_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14386297/data_14386297_2026-06-26T19-34-16_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14386297/data_14386297_2026-06-26T19-33-46_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14386297/data_14386297_2026-06-26T19-33-16_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14386297/data_14386297_2026-06-26T19-32-46_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14386297/data_14386297_2026-06-26T19-32-16_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14386297/data_14386297_2026-06-26T19-31-46_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14386297/data_14386297_2026-06-26T19-31-16_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14386297/data_14386297_2026-06-26T19-30-16_g1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14386297/data_14386297_2026-06-26T19-30-16_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14386297/data_14386297_2026-06-26T19-29-46_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14386297/data_14386297_2026-06-26T19-29-16_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14386297/data_14386297_2026-06-26T19-28-46_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14386297/data_14386297_2026-06-26T19-28-16_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14386297/data_14386297_2026-06-26T19-27-16_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14386297/data_14386297_2026-06-26T19-26-46_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14386297/data_14386297_2026-06-26T19-25-45_g0"
+    }
+  ],
+  "station_name": "SPUTNIX-VHF/UHF-Magadan",
+  "station_lat": 59.589261,
+  "station_lng": 150.832095,
+  "station_alt": 203,
+  "vetted_status": "good",
+  "vetted_user": null,
+  "vetted_datetime": null,
+  "archived": false,
+  "archive_url": null,
+  "client_version": "1.9.3",
+  "client_metadata": "{\"radio\": {\"name\": \"gr-satnogs\", \"version\": \"v2.3-compat-xxx-v2.3.5.0\", \"parameters\": {\"soapy-rx-device\": \"driver=rtlsdr\", \"samp-rate-rx\": \"2.048e6\", \"rx-freq\": \"401195000\", \"file-path\": \"/tmp/.satnogs/data/receiving_satnogs_14386297_2026-06-26T19-25-17.out\", \"waterfall-file-path\": \"/tmp/.satnogs/data/receiving_waterfall_14386297_2026-06-26T19-25-17.dat\", \"decoded-data-file-path\": \"/tmp/.satnogs/data/data_14386297\", \"doppler-correction-per-sec\": null, \"lo-offset\": null, \"ppm\": \"0\", \"rigctl-host\": \"rigctld\", \"rigctl-port\": \"4532\", \"gain-mode\": \"Overall\", \"gain\": \"38.6\", \"antenna\": \"RX\", \"dev-args\": null, \"stream-args\": null, \"tune-args\": null, \"other-settings\": null, \"dc-removal\": null, \"bb-freq\": null, \"bw\": null, \"enable-iq-dump\": \"0\", \"iq-file-path\": \"/tmp/iq\", \"udp-dump-host\": \"127.0.0.1\", \"udp-dump-port\": 57356, \"wpm\": null, \"baudrate\": null, \"framing\": null}}, \"latitude\": 59.589261, \"longitude\": 150.832095, \"elevation\": 203, \"frequency\": 401195000}",
+  "status": "good",
+  "waterfall_status": "unknown",
+  "waterfall_status_user": null,
+  "waterfall_status_datetime": null,
+  "rise_azimuth": 155.0,
+  "set_azimuth": 346.0,
+  "max_altitude": 68.0,
+  "transmitter_uuid": "jdXkyGUzmsXR8XVUnDkk9s",
+  "transmitter_description": "Mode U - GMSK2k4 - USP",
+  "transmitter_type": "Transmitter",
+  "transmitter_uplink_low": null,
+  "transmitter_uplink_high": null,
+  "transmitter_uplink_drift": null,
+  "transmitter_downlink_low": 401195000,
+  "transmitter_downlink_high": null,
+  "transmitter_downlink_drift": null,
+  "transmitter_mode": "GMSK USP",
+  "transmitter_invert": false,
+  "transmitter_baud": 2400.0,
+  "transmitter_updated": "2024-11-12T23:53:19.423842Z",
+  "transmitter_status": "active",
+  "tle0": "0 OBJECT F",
+  "tle1": "1 61740U 24199F   26177.26724524  .00002310  00000-0  21067-3 0  9993",
+  "tle2": "2 61740  97.3243  14.7016 0013379  37.1897 323.0249 14.95944153133279",
+  "tle_source": "Space-Track.org",
+  "center_frequency": null,
+  "observer": "sputnix",
+  "observation_frequency": 401195000,
+  "transmitter_unconfirmed": false,
+  "sat_id": "JCCX-9296-2809-6004-0718",
+  "_local_waterfall_path": "/home/verdantfoster/strf-main/pipeline/data/waterfall/14386297.png",
+  "_local_metadata_path": "/home/verdantfoster/strf-main/pipeline/data/metadata/14386297.json",
+  "_local_image_width": 823,
+  "_local_image_height": 1603
+}

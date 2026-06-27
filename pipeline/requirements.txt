@@ -1,0 +1,9 @@
+opencv-python-headless>=4.5
+numpy>=1.21
+scipy>=1.7
+requests>=2.25
+rich>=10.0
+astropy>=5.0
+matplotlib>=3.4
+tqdm>=4.60
+sgp4>=2.20

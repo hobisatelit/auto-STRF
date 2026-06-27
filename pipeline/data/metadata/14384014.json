@@ -1,0 +1,78 @@
+{
+  "id": 14384014,
+  "start": "2026-06-26T12:53:40Z",
+  "end": "2026-06-26T12:59:35Z",
+  "ground_station": 4595,
+  "transmitter": "3LiK5q6cqKruL4u3EtmvZc",
+  "norad_cat_id": 46912,
+  "payload": "https://network-satnogs.freetls.fastly.net/media/data_obs/2026/6/26/12/14384014/satnogs_14384014_2026-06-26T12-53-40.ogg",
+  "waterfall": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14384014/waterfall_14384014_2026-06-26T12-53-40.png",
+  "demoddata": [
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14384014/data_14384014_2026-06-26T12-54-48"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14384014/data_14384014_2026-06-26T12-54-30_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14384014/data_14384014_2026-06-26T12-54-30"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14384014/data_14384014_2026-06-26T12-54-29"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14384014/data_14384014_2026-06-26T12-54-18"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14384014/data_14384014_2026-06-26T12-53-59_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14384014/data_14384014_2026-06-26T12-53-59"
+    }
+  ],
+  "station_name": "EA4TA",
+  "station_lat": 40.44,
+  "station_lng": -3.8,
+  "station_alt": 700,
+  "vetted_status": "good",
+  "vetted_user": null,
+  "vetted_datetime": null,
+  "archived": false,
+  "archive_url": null,
+  "client_version": "1.9.3",
+  "client_metadata": "{\"radio\": {\"name\": \"gr-satnogs\", \"version\": \"v2.3-1-756d6f5a\", \"parameters\": {\"soapy-rx-device\": \"driver=rtlsdr,serial=00004595\", \"samp-rate-rx\": \"2.048e6\", \"rx-freq\": \"401030000\", \"file-path\": \"/tmp/.satnogs/data/receiving_satnogs_14384014_2026-06-26T12-53-40.out\", \"waterfall-file-path\": \"/tmp/.satnogs/data/receiving_waterfall_14384014_2026-06-26T12-53-40.dat\", \"decoded-data-file-path\": \"/tmp/.satnogs/data/data_14384014\", \"doppler-correction-per-sec\": null, \"lo-offset\": null, \"ppm\": \"-3.9\", \"rigctl-host\": \"rigctld\", \"rigctl-port\": \"4532\", \"gain-mode\": \"Overall\", \"gain\": \"23\", \"antenna\": \"RX\", \"dev-args\": null, \"stream-args\": null, \"tune-args\": null, \"other-settings\": null, \"dc-removal\": null, \"bb-freq\": null, \"bw\": null, \"enable-iq-dump\": \"0\", \"iq-file-path\": null, \"udp-dump-host\": \"127.0.0.1\", \"udp-dump-port\": 57356, \"wpm\": null, \"baudrate\": \"9600\", \"framing\": \"ax100_mode5\"}}, \"latitude\": 40.44, \"longitude\": -3.8, \"elevation\": 700, \"frequency\": 401030000}",
+  "status": "good",
+  "waterfall_status": "unknown",
+  "waterfall_status_user": null,
+  "waterfall_status_datetime": null,
+  "rise_azimuth": 179.0,
+  "set_azimuth": 107.0,
+  "max_altitude": 46.0,
+  "transmitter_uuid": "3LiK5q6cqKruL4u3EtmvZc",
+  "transmitter_description": "Mode U",
+  "transmitter_type": "Transmitter",
+  "transmitter_uplink_low": null,
+  "transmitter_uplink_high": null,
+  "transmitter_uplink_drift": null,
+  "transmitter_downlink_low": 401030000,
+  "transmitter_downlink_high": null,
+  "transmitter_downlink_drift": null,
+  "transmitter_mode": "FSK AX.100 Mode 5",
+  "transmitter_invert": false,
+  "transmitter_baud": 9600.0,
+  "transmitter_updated": "2022-10-15T21:35:16.299889Z",
+  "transmitter_status": "active",
+  "tle0": "0 KSM1-A",
+  "tle1": "1 46912U 20081H   26176.99596587  .00010229  00000-0  39073-3 0  9992",
+  "tle2": "2 46912  36.8982   7.0144 0003269   0.4802 359.5950 15.26089534310520",
+  "tle_source": "Space-Track.org",
+  "center_frequency": null,
+  "observer": "chapulin",
+  "observation_frequency": 401030000,
+  "transmitter_unconfirmed": false,
+  "sat_id": "HUNW-6973-2030-4958-5201",
+  "_local_waterfall_path": "/home/verdantfoster/strf-main/pipeline/data/waterfall/14384014.png",
+  "_local_metadata_path": "/home/verdantfoster/strf-main/pipeline/data/metadata/14384014.json",
+  "_local_image_width": 823,
+  "_local_image_height": 1603
+}

@@ -1,0 +1,9 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^python -m pip show python-satnogs-api$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    },
+    "discord.removeDetails": false
+}

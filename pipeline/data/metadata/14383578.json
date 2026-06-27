@@ -1,0 +1,72 @@
+{
+  "id": 14383578,
+  "start": "2026-06-26T13:26:45Z",
+  "end": "2026-06-26T13:29:45Z",
+  "ground_station": 4451,
+  "transmitter": "dLZuN4gUVyvk2MqdyV2ZCx",
+  "norad_cat_id": 61778,
+  "payload": "https://network-satnogs.freetls.fastly.net/media/data_obs/2026/6/26/13/14383578/satnogs_14383578_2026-06-26T13-26-45.ogg",
+  "waterfall": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/13/14383578/waterfall_14383578_2026-06-26T13-26-45.png",
+  "demoddata": [
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/13/14383578/data_14383578_2026-06-26T13-28-01_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/13/14383578/data_14383578_2026-06-26T13-29-32_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/13/14383578/data_14383578_2026-06-26T13-28-32_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/13/14383578/data_14383578_2026-06-26T13-27-01_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/13/14383578/data_14383578_2026-06-26T13-27-31_g0"
+    }
+  ],
+  "station_name": "I LOVE BALI YES  (-.-)Zzz...",
+  "station_lat": -8.7356,
+  "station_lng": 115.1948,
+  "station_alt": 10,
+  "vetted_status": "good",
+  "vetted_user": null,
+  "vetted_datetime": null,
+  "archived": false,
+  "archive_url": null,
+  "client_version": "2.1.2",
+  "client_metadata": "{\"radio\": {\"name\": \"gr-satnogs\", \"version\": null, \"parameters\": {\"mode\": \"GMSK USP\", \"soapy-rx-device\": \"driver=rtlsdr,serial=1004451\", \"samp-rate-rx\": \"2.048e6\", \"rx-freq\": \"401065000\", \"file-path\": \"/tmp/.satnogs/data/receiving_satnogs_14383578_2026-06-26T13-26-45.out\", \"waterfall-file-path\": \"/tmp/.satnogs/data/receiving_waterfall_14383578_2026-06-26T13-26-45.dat\", \"decoded-data-file-path\": \"/tmp/.satnogs/data/data_14383578\", \"doppler-correction-per-sec\": null, \"lo-offset\": null, \"ppm\": null, \"rigctl-host\": \"rigctld\", \"rigctl-port\": \"4532\", \"gain-mode\": \"Overall\", \"gain\": \"48\", \"antenna\": \"RX\", \"dev-args\": null, \"stream-args\": null, \"tune-args\": null, \"other-settings\": null, \"dc-removal\": null, \"bb-freq\": null, \"bw\": null, \"enable-iq-dump\": \"1\", \"iq-file-path\": \"/tmp/.satnogs/iq.raw\", \"udp-dump-host\": \"0.0.0.0\", \"udp-dump-port\": 57356, \"baud\": \"2400\"}}, \"latitude\": -8.7356, \"longitude\": 115.1948, \"elevation\": 10.0, \"frequency\": 401065000}",
+  "status": "good",
+  "waterfall_status": "unknown",
+  "waterfall_status_user": null,
+  "waterfall_status_datetime": null,
+  "rise_azimuth": 15.0,
+  "set_azimuth": 187.0,
+  "max_altitude": 82.0,
+  "transmitter_uuid": "dLZuN4gUVyvk2MqdyV2ZCx",
+  "transmitter_description": "Mode U - GMSK2k4 - USP",
+  "transmitter_type": "Transmitter",
+  "transmitter_uplink_low": null,
+  "transmitter_uplink_high": null,
+  "transmitter_uplink_drift": null,
+  "transmitter_downlink_low": 401065000,
+  "transmitter_downlink_high": null,
+  "transmitter_downlink_drift": null,
+  "transmitter_mode": "GMSK USP",
+  "transmitter_invert": false,
+  "transmitter_baud": 2400.0,
+  "transmitter_updated": "2024-11-12T23:53:19.416907Z",
+  "transmitter_status": "active",
+  "tle0": "0 OBJECT AV",
+  "tle1": "1 61778U 24199AV  26177.14245321  .00053645  00000-0  69471-3 0  9992",
+  "tle2": "2 61778  97.2888  53.0898 0004857 232.4607 127.6208 15.58719327135816",
+  "tle_source": "Space-Track.org",
+  "center_frequency": null,
+  "observer": "bali",
+  "observation_frequency": 401065000,
+  "transmitter_unconfirmed": false,
+  "sat_id": "EBOD-7707-1906-5225-7688",
+  "_local_waterfall_path": "/home/verdantfoster/strf-main/pipeline/data/waterfall/14383578.png",
+  "_local_metadata_path": "/home/verdantfoster/strf-main/pipeline/data/metadata/14383578.json",
+  "_local_image_width": 832,
+  "_local_image_height": 1603
+}

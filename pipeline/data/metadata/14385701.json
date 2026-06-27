@@ -1,0 +1,93 @@
+{
+  "id": 14385701,
+  "start": "2026-06-26T19:12:24Z",
+  "end": "2026-06-26T19:19:42Z",
+  "ground_station": 3153,
+  "transmitter": "GCmN6RULea8dAT7Qoat8z2",
+  "norad_cat_id": 68635,
+  "payload": "https://network-satnogs.freetls.fastly.net/media/data_obs/2026/6/26/19/14385701/satnogs_14385701_2026-06-26T19-12-24.ogg",
+  "waterfall": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385701/waterfall_14385701_2026-06-26T19-12-24.png",
+  "demoddata": [
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385701/data_14385701_2026-06-26T19-16-21"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385701/data_14385701_2026-06-26T19-16-18"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385701/data_14385701_2026-06-26T19-16-14"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385701/data_14385701_2026-06-26T19-16-06"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385701/data_14385701_2026-06-26T19-15-56"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385701/data_14385701_2026-06-26T19-15-51"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385701/data_14385701_2026-06-26T19-15-42"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385701/data_14385701_2026-06-26T19-15-38"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385701/data_14385701_2026-06-26T19-15-33"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385701/data_14385701_2026-06-26T19-15-31"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385701/data_14385701_2026-06-26T19-15-15"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385701/data_14385701_2026-06-26T19-16-36"
+    }
+  ],
+  "station_name": "EI4FNB UHF Omni",
+  "station_lat": 52.74,
+  "station_lng": -6.89,
+  "station_alt": 159,
+  "vetted_status": "good",
+  "vetted_user": null,
+  "vetted_datetime": null,
+  "archived": false,
+  "archive_url": null,
+  "client_version": "1.8.1",
+  "client_metadata": "{\"radio\": {\"name\": \"gr-satnogs\", \"version\": \"v2.3-compat-xxx-v2.3.5.0\", \"parameters\": {\"soapy-rx-device\": \"driver=rtlsdr\", \"samp-rate-rx\": \"2.048e6\", \"rx-freq\": \"437250000\", \"file-path\": \"/tmp/.satnogs/data/receiving_satnogs_14385701_2026-06-26T19-12-24.out\", \"waterfall-file-path\": \"/tmp/.satnogs/data/receiving_waterfall_14385701_2026-06-26T19-12-24.dat\", \"decoded-data-file-path\": \"/tmp/.satnogs/data/data_14385701\", \"doppler-correction-per-sec\": null, \"lo-offset\": null, \"ppm\": null, \"rigctl-port\": \"4532\", \"gain-mode\": \"Overall\", \"gain\": \"30\", \"antenna\": \"RX\", \"dev-args\": null, \"stream-args\": null, \"tune-args\": null, \"other-settings\": null, \"dc-removal\": null, \"bb-freq\": null, \"bw\": null, \"enable-iq-dump\": \"0\", \"iq-file-path\": null, \"udp-dump-host\": null, \"udp-dump-port\": 57356, \"wpm\": null, \"baudrate\": \"9600\", \"framing\": \"ax25\"}}, \"latitude\": 52.74, \"longitude\": -6.89, \"elevation\": 159, \"frequency\": 437250000}",
+  "status": "good",
+  "waterfall_status": "unknown",
+  "waterfall_status_user": null,
+  "waterfall_status_datetime": null,
+  "rise_azimuth": 248.0,
+  "set_azimuth": 51.0,
+  "max_altitude": 61.0,
+  "transmitter_uuid": "GCmN6RULea8dAT7Qoat8z2",
+  "transmitter_description": "AstroDev Li-2",
+  "transmitter_type": "Transceiver",
+  "transmitter_uplink_low": 437250000,
+  "transmitter_uplink_high": null,
+  "transmitter_uplink_drift": null,
+  "transmitter_downlink_low": 437250000,
+  "transmitter_downlink_high": null,
+  "transmitter_downlink_drift": null,
+  "transmitter_mode": "GMSK",
+  "transmitter_invert": false,
+  "transmitter_baud": 9600.0,
+  "transmitter_updated": "2026-04-05T07:29:14.417527Z",
+  "transmitter_status": "active",
+  "tle0": "0 OBJECT J",
+  "tle1": "1 68635U 26074J   26177.26576768  .00011709  00000-0  46448-3 0  9994",
+  "tle2": "2 68635  60.0206 143.1722 0031352  31.8108 328.4858 15.25383369 12173",
+  "tle_source": "Space-Track.org",
+  "center_frequency": null,
+  "observer": "satcolintel5",
+  "observation_frequency": 437250000,
+  "transmitter_unconfirmed": false,
+  "sat_id": "GLFY-8231-7125-4883-6529",
+  "_local_waterfall_path": "/home/verdantfoster/strf-main/pipeline/data/waterfall/14385701.png",
+  "_local_metadata_path": "/home/verdantfoster/strf-main/pipeline/data/metadata/14385701.json",
+  "_local_image_width": 832,
+  "_local_image_height": 1603
+}

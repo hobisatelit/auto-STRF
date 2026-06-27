@@ -1,0 +1,1 @@
+"""Modul STRF Automation Pipeline."""

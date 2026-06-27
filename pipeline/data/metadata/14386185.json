@@ -1,0 +1,117 @@
+{
+  "id": 14386185,
+  "start": "2026-06-26T18:51:31Z",
+  "end": "2026-06-26T19:04:09Z",
+  "ground_station": 4111,
+  "transmitter": "hFDkQfVWz74gCnkXRygZq5",
+  "norad_cat_id": 43689,
+  "payload": null,
+  "waterfall": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14386185/waterfall_14386185_2026-06-26T18-51-31.png",
+  "demoddata": [
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14386185/data_14386185_2026-06-26T18-52-35"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14386185/data_14386185_2026-06-26T18-55-28"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14386185/data_14386185_2026-06-26T18-55-04"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14386185/data_14386185_2026-06-26T18-54-28"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14386185/data_14386185_2026-06-26T18-54-24"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14386185/data_14386185_2026-06-26T18-53-52"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14386185/data_14386185_2026-06-26T18-53-20"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14386185/data_14386185_2026-06-26T18-53-11"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14386185/data_14386185_2026-06-26T18-58-44"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14386185/data_14386185_2026-06-26T18-58-41"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14386185/data_14386185_2026-06-26T18-58-08"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14386185/data_14386185_2026-06-26T18-57-36"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14386185/data_14386185_2026-06-26T18-57-27"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14386185/data_14386185_2026-06-26T18-56-51"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14386185/data_14386185_2026-06-26T18-56-32"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14386185/data_14386185_2026-06-26T19-01-52"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14386185/data_14386185_2026-06-26T19-01-43"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14386185/data_14386185_2026-06-26T19-01-07"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14386185/data_14386185_2026-06-26T19-00-48"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14386185/data_14386185_2026-06-26T18-59-20"
+    }
+  ],
+  "station_name": "Plyachka",
+  "station_lat": 42.48304,
+  "station_lng": 23.445813,
+  "station_alt": 1100,
+  "vetted_status": "good",
+  "vetted_user": null,
+  "vetted_datetime": null,
+  "archived": false,
+  "archive_url": null,
+  "client_version": "1.9.3+5.g4eedaa1",
+  "client_metadata": "{\"radio\": {\"name\": \"gr-satnogs\", \"version\": \"v2.3-compat-xxx-v2.3.5.0\", \"parameters\": {\"soapy-rx-device\": \"driver=rtlsdr\", \"samp-rate-rx\": \"2.048e6\", \"rx-freq\": \"465987500\", \"file-path\": \"/tmp/.satnogs/data/receiving_satnogs_14386185_2026-06-26T18-51-31.out\", \"waterfall-file-path\": \"/tmp/.satnogs/data/receiving_waterfall_14386185_2026-06-26T18-51-31.dat\", \"decoded-data-file-path\": \"/tmp/.satnogs/data/data_14386185\", \"doppler-correction-per-sec\": null, \"lo-offset\": null, \"ppm\": \"0\", \"rigctl-host\": \"rigctld\", \"rigctl-port\": \"4532\", \"gain-mode\": \"Overall\", \"gain\": \"42.7\", \"antenna\": \"RX\", \"dev-args\": null, \"stream-args\": null, \"tune-args\": null, \"other-settings\": null, \"dc-removal\": null, \"bb-freq\": null, \"bw\": null, \"enable-iq-dump\": \"0\", \"iq-file-path\": null, \"udp-dump-host\": \"0.0.0.0\", \"udp-dump-port\": 57356, \"wpm\": null, \"baudrate\": \"800\", \"framing\": null}}, \"latitude\": 42.48304, \"longitude\": 23.445813, \"elevation\": 1100, \"frequency\": 465987500}",
+  "status": "good",
+  "waterfall_status": "unknown",
+  "waterfall_status_user": null,
+  "waterfall_status_datetime": null,
+  "rise_azimuth": 149.0,
+  "set_azimuth": 353.0,
+  "max_altitude": 54.0,
+  "transmitter_uuid": "hFDkQfVWz74gCnkXRygZq5",
+  "transmitter_description": "ARGOS-3 A-DCS",
+  "transmitter_type": "Transmitter",
+  "transmitter_uplink_low": null,
+  "transmitter_uplink_high": null,
+  "transmitter_uplink_drift": null,
+  "transmitter_downlink_low": 465987500,
+  "transmitter_downlink_high": null,
+  "transmitter_downlink_drift": null,
+  "transmitter_mode": "BPSK PMT-A3",
+  "transmitter_invert": false,
+  "transmitter_baud": 800.0,
+  "transmitter_updated": "2020-06-19T23:56:29.805850Z",
+  "transmitter_status": "active",
+  "tle0": "0 METOP-C",
+  "tle1": "1 43689U 18087A   26177.21840237  .00000084  00000-0  58143-4 0  9991",
+  "tle2": "2 43689  98.6640 236.6568 0002035 117.9684 242.1700 14.21514341396119",
+  "tle_source": "Space-Track.org",
+  "center_frequency": null,
+  "observer": "yurimdias",
+  "observation_frequency": 465987500,
+  "transmitter_unconfirmed": false,
+  "sat_id": "ZYIO-9572-5451-0893-4246",
+  "_local_waterfall_path": "/home/verdantfoster/strf-main/pipeline/data/waterfall/14386185.png",
+  "_local_metadata_path": "/home/verdantfoster/strf-main/pipeline/data/metadata/14386185.json",
+  "_local_image_width": 832,
+  "_local_image_height": 1603
+}

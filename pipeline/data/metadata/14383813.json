@@ -1,0 +1,87 @@
+{
+  "id": 14383813,
+  "start": "2026-06-26T12:36:29Z",
+  "end": "2026-06-26T12:46:32Z",
+  "ground_station": 4022,
+  "transmitter": "cjDsiYyHJ9NhbrokHeWNWb",
+  "norad_cat_id": 61773,
+  "payload": "https://network-satnogs.freetls.fastly.net/media/data_obs/2026/6/26/12/14383813/satnogs_14383813_2026-06-26T12-36-29.ogg",
+  "waterfall": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383813/waterfall_14383813_2026-06-26T12-36-29.png",
+  "demoddata": [
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383813/data_14383813_2026-06-26T12-43-46_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383813/data_14383813_2026-06-26T12-43-16_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383813/data_14383813_2026-06-26T12-42-46_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383813/data_14383813_2026-06-26T12-42-16_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383813/data_14383813_2026-06-26T12-41-46_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383813/data_14383813_2026-06-26T12-41-16_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383813/data_14383813_2026-06-26T12-40-46_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383813/data_14383813_2026-06-26T12-40-16_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383813/data_14383813_2026-06-26T12-39-46_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383813/data_14383813_2026-06-26T12-39-16_g0"
+    }
+  ],
+  "station_name": "SPUTNIX-VHF/UHF-Magadan",
+  "station_lat": 59.589261,
+  "station_lng": 150.832095,
+  "station_alt": 203,
+  "vetted_status": "good",
+  "vetted_user": null,
+  "vetted_datetime": null,
+  "archived": false,
+  "archive_url": null,
+  "client_version": "1.9.3",
+  "client_metadata": "{\"radio\": {\"name\": \"gr-satnogs\", \"version\": \"v2.3-compat-xxx-v2.3.5.0\", \"parameters\": {\"soapy-rx-device\": \"driver=rtlsdr\", \"samp-rate-rx\": \"2.048e6\", \"rx-freq\": \"401225000\", \"file-path\": \"/tmp/.satnogs/data/receiving_satnogs_14383813_2026-06-26T12-36-29.out\", \"waterfall-file-path\": \"/tmp/.satnogs/data/receiving_waterfall_14383813_2026-06-26T12-36-29.dat\", \"decoded-data-file-path\": \"/tmp/.satnogs/data/data_14383813\", \"doppler-correction-per-sec\": null, \"lo-offset\": null, \"ppm\": \"0\", \"rigctl-host\": \"rigctld\", \"rigctl-port\": \"4532\", \"gain-mode\": \"Overall\", \"gain\": \"38.6\", \"antenna\": \"RX\", \"dev-args\": null, \"stream-args\": null, \"tune-args\": null, \"other-settings\": null, \"dc-removal\": null, \"bb-freq\": null, \"bw\": null, \"enable-iq-dump\": \"0\", \"iq-file-path\": \"/tmp/iq\", \"udp-dump-host\": \"127.0.0.1\", \"udp-dump-port\": 57356, \"wpm\": null, \"baudrate\": null, \"framing\": null}}, \"latitude\": 59.589261, \"longitude\": 150.832095, \"elevation\": 203, \"frequency\": 401225000}",
+  "status": "good",
+  "waterfall_status": "unknown",
+  "waterfall_status_user": null,
+  "waterfall_status_datetime": null,
+  "rise_azimuth": 11.0,
+  "set_azimuth": 218.0,
+  "max_altitude": 35.0,
+  "transmitter_uuid": "cjDsiYyHJ9NhbrokHeWNWb",
+  "transmitter_description": "Mode U - GMSK2k4 - USP",
+  "transmitter_type": "Transmitter",
+  "transmitter_uplink_low": null,
+  "transmitter_uplink_high": null,
+  "transmitter_uplink_drift": null,
+  "transmitter_downlink_low": 401225000,
+  "transmitter_downlink_high": null,
+  "transmitter_downlink_drift": null,
+  "transmitter_mode": "GMSK USP",
+  "transmitter_invert": false,
+  "transmitter_baud": 2400.0,
+  "transmitter_updated": "2024-11-12T23:53:19.406027Z",
+  "transmitter_status": "active",
+  "tle0": "0 OBJECT AQ",
+  "tle1": "1 61773U 24199AQ  26177.18702888  .00056547  00000-0  70677-3 0  9991",
+  "tle2": "2 61773  97.2902  53.5148 0004750 229.9828 130.1013 15.59649249135841",
+  "tle_source": "Space-Track.org",
+  "center_frequency": null,
+  "observer": "sputnix",
+  "observation_frequency": 401225000,
+  "transmitter_unconfirmed": false,
+  "sat_id": "OQQY-3994-3361-3091-7110",
+  "_local_waterfall_path": "/home/verdantfoster/strf-main/pipeline/data/waterfall/14383813.png",
+  "_local_metadata_path": "/home/verdantfoster/strf-main/pipeline/data/metadata/14383813.json",
+  "_local_image_width": 823,
+  "_local_image_height": 1605
+}

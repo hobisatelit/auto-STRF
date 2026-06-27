@@ -1,0 +1,12 @@
+{
+  "norad_id": 40931,
+  "station": {
+    "site_id": 7158,
+    "lat": -31.76,
+    "lon": 115.76,
+    "alt": 40
+  },
+  "observation_id": 14385058,
+  "n_points": 1546,
+  "format": "MJD frequency_hz flux site_id"
+}

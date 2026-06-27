@@ -1,0 +1,75 @@
+{
+  "id": 14385976,
+  "start": "2026-06-26T19:33:21Z",
+  "end": "2026-06-26T19:44:54Z",
+  "ground_station": 4625,
+  "transmitter": "jybvWJ3aXS2hrijWRAbkRS",
+  "norad_cat_id": 68506,
+  "payload": "https://network-satnogs.freetls.fastly.net/media/data_obs/2026/6/26/19/14385976/satnogs_14385976_2026-06-26T19-33-21.ogg",
+  "waterfall": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385976/waterfall_14385976_2026-06-26T19-33-21.png",
+  "demoddata": [
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385976/data_14385976_2026-06-26T19-40-54"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385976/data_14385976_2026-06-26T19-40-49"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385976/data_14385976_2026-06-26T19-40-44"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385976/data_14385976_2026-06-26T19-40-39"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385976/data_14385976_2026-06-26T19-40-29"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385976/data_14385976_2026-06-26T19-40-24"
+    }
+  ],
+  "station_name": "wo2cc-01",
+  "station_lat": 34.466,
+  "station_lng": -77.476,
+  "station_alt": 10,
+  "vetted_status": "good",
+  "vetted_user": null,
+  "vetted_datetime": null,
+  "archived": false,
+  "archive_url": null,
+  "client_version": "2.1.2",
+  "client_metadata": "{\"radio\": {\"name\": \"gr-satnogs\", \"version\": null, \"parameters\": {\"mode\": \"GFSK\", \"soapy-rx-device\": \"driver=rtlsdr,biastee=true\", \"samp-rate-rx\": \"2.048e6\", \"rx-freq\": \"437325000\", \"file-path\": \"/tmp/.satnogs/data/receiving_satnogs_14385976_2026-06-26T19-33-21.out\", \"waterfall-file-path\": \"/tmp/.satnogs/data/receiving_waterfall_14385976_2026-06-26T19-33-21.dat\", \"decoded-data-file-path\": \"/tmp/.satnogs/data/data_14385976\", \"doppler-correction-per-sec\": null, \"lo-offset\": null, \"ppm\": \"0\", \"rigctl-host\": \"rigctld\", \"rigctl-port\": \"4532\", \"gain-mode\": \"Overall\", \"gain\": \"29.7\", \"antenna\": \"RX\", \"dev-args\": null, \"stream-args\": null, \"tune-args\": null, \"other-settings\": null, \"dc-removal\": null, \"bb-freq\": null, \"bw\": null, \"enable-iq-dump\": \"1\", \"iq-file-path\": \"/app/iq\", \"udp-dump-host\": \"0.0.0.0\", \"udp-dump-port\": 57356, \"baud\": \"9600\"}}, \"latitude\": 34.466, \"longitude\": -77.476, \"elevation\": 10.0, \"frequency\": 437325000}",
+  "status": "good",
+  "waterfall_status": "unknown",
+  "waterfall_status_user": null,
+  "waterfall_status_datetime": null,
+  "rise_azimuth": 170.0,
+  "set_azimuth": 347.0,
+  "max_altitude": 77.0,
+  "transmitter_uuid": "jybvWJ3aXS2hrijWRAbkRS",
+  "transmitter_description": "Mode U - GFSK9k6 - AX.25 G3RUH",
+  "transmitter_type": "Transmitter",
+  "transmitter_uplink_low": null,
+  "transmitter_uplink_high": null,
+  "transmitter_uplink_drift": null,
+  "transmitter_downlink_low": 437325000,
+  "transmitter_downlink_high": null,
+  "transmitter_downlink_drift": null,
+  "transmitter_mode": "GFSK",
+  "transmitter_invert": false,
+  "transmitter_baud": 9600.0,
+  "transmitter_updated": "2024-08-12T23:51:28.099510Z",
+  "transmitter_status": "active",
+  "tle0": "0 AEPEX",
+  "tle1": "1 68506U 26067CU  26176.82452965  .00009823  00000-0  46996-3 0  9998",
+  "tle2": "2 68506  97.4514 135.1746 0005091  68.5706 291.6071 15.19170314 13137",
+  "tle_source": "Space-Track.org",
+  "center_frequency": null,
+  "observer": "satcolintel5",
+  "observation_frequency": 437325000,
+  "transmitter_unconfirmed": false,
+  "sat_id": "ROGL-5396-9562-5275-1160",
+  "_local_waterfall_path": "/home/verdantfoster/strf-main/pipeline/data/waterfall/14385976.png",
+  "_local_metadata_path": "/home/verdantfoster/strf-main/pipeline/data/metadata/14385976.json",
+  "_local_image_width": 832,
+  "_local_image_height": 1603
+}

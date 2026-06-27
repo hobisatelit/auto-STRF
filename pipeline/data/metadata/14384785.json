@@ -1,0 +1,759 @@
+{
+  "id": 14384785,
+  "start": "2026-06-26T19:41:37Z",
+  "end": "2026-06-26T19:46:36Z",
+  "ground_station": 3020,
+  "transmitter": "VXoh2CpZaVTVnJdGyfjVA9",
+  "norad_cat_id": 68468,
+  "payload": "https://network-satnogs.freetls.fastly.net/media/data_obs/2026/6/26/19/14384785/satnogs_14384785_2026-06-26T19-41-37.ogg",
+  "waterfall": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/waterfall_14384785_2026-06-26T19-41-37.png",
+  "demoddata": [
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-56_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-56_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-56"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-55_11"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-55_10"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-55_9"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-55_8"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-55_7"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-55_6"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-55_5"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-55_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-55_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-55_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-55_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-55"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-54"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-45_11"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-45_10"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-45_9"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-45_8"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-45_7"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-45_6"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-45_5"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-45_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-45_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-45_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-45_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-45"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-44"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-35_9"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-35_8"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-35_7"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-35_6"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-35_5"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-35_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-35_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-35_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-35_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-35"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-34"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-28_8"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-28_7"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-28_6"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-28_5"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-28_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-28_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-28_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-28_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-28"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-27_8"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-27_7"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-27_6"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-27_5"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-27_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-27_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-27_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-27_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-27"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-16_5"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-16_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-16_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-16_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-16_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-16"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-15_5"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-15_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-15_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-15_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-15_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-44-15"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-56_6"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-56_5"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-56_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-56_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-56_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-56_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-56"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-55"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-46_9"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-46_8"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-46_7"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-46_6"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-46_5"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-46_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-46_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-46_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-46_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-46"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-45_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-45_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-45_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-45_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-45"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-36_7"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-36_6"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-36_5"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-36_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-36_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-36_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-36_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-36"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-35_5"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-35_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-35_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-35_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-35_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-35"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-26_9"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-26_8"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-26_7"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-26_6"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-26_5"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-26_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-26_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-26_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-26_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-26"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-25_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-25_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-25"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-16_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-16_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-16_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-16"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-15_7"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-15_6"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-15_5"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-15_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-15_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-15_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-15_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-15"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-06_8"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-06_7"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-06_6"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-06_5"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-06_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-06_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-06_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-06_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-06"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-05_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-05_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-05_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-05_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-43-05"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-56_9"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-56_8"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-56_7"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-56_6"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-56_5"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-56_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-56_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-56_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-56_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-56"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-55_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-55_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-55_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-55_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-55"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-46_10"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-46_9"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-46_8"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-46_7"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-46_6"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-46_5"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-46_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-46_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-46_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-46_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-46"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-45_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-45_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-45"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-35_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-35_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-35_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-35_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-35"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-16_7"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-16_6"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-16_5"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-16_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-16_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-16_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-16_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-16"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-15_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-15_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-15_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-42-15"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-56"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-55_6"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-55_5"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-55_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-55_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-55_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-55_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-55"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-36_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-36_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-36_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-36"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-35_5"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-35_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-35_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-35_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-35_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-35"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-17"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-16_11"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-16_10"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-16_9"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-16_8"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-16_7"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-16_6"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-16_5"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-16_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-16_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-16_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-16_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-16"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-15"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-06_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-06_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-06"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-05_6"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-05_5"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-05_4"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-05_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-05_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-05_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384785/data_14384785_2026-06-26T19-45-05"
+    }
+  ],
+  "station_name": "Jim UHF",
+  "station_lat": 33.797628,
+  "station_lng": -79.159123,
+  "station_alt": 12,
+  "vetted_status": "good",
+  "vetted_user": null,
+  "vetted_datetime": null,
+  "archived": false,
+  "archive_url": null,
+  "client_version": "1.8.1",
+  "client_metadata": "{\"radio\": {\"name\": \"gr-satnogs\", \"version\": \"v2.3-compat-xxx-v2.3.5.0\", \"parameters\": {\"soapy-rx-device\": \"driver=sdrplay\", \"samp-rate-rx\": \"384000\", \"rx-freq\": \"401550000\", \"file-path\": \"/tmp/.satnogs/data/receiving_satnogs_14384785_2026-06-26T19-41-37.out\", \"waterfall-file-path\": \"/tmp/.satnogs/data/receiving_waterfall_14384785_2026-06-26T19-41-37.dat\", \"decoded-data-file-path\": \"/tmp/.satnogs/data/data_14384785\", \"doppler-correction-per-sec\": null, \"lo-offset\": null, \"ppm\": null, \"rigctl-port\": \"4532\", \"gain-mode\": \"Settings Field\", \"gain\": null, \"antenna\": \"RX\", \"dev-args\": null, \"stream-args\": null, \"tune-args\": null, \"other-settings\": \"RFGR=1,IFGR=36\", \"dc-removal\": null, \"bb-freq\": null, \"bw\": \"300000\", \"enable-iq-dump\": \"0\", \"iq-file-path\": null, \"udp-dump-host\": null, \"udp-dump-port\": 57356, \"wpm\": null, \"baudrate\": \"9600\", \"framing\": \"ax100_mode5\"}}, \"latitude\": 33.797628, \"longitude\": -79.159123, \"elevation\": 12, \"frequency\": 401550000}",
+  "status": "good",
+  "waterfall_status": "unknown",
+  "waterfall_status_user": null,
+  "waterfall_status_datetime": null,
+  "rise_azimuth": 172.0,
+  "set_azimuth": 345.0,
+  "max_altitude": 81.0,
+  "transmitter_uuid": "VXoh2CpZaVTVnJdGyfjVA9",
+  "transmitter_description": "Mode U - Transmitter",
+  "transmitter_type": "Transmitter",
+  "transmitter_uplink_low": null,
+  "transmitter_uplink_high": null,
+  "transmitter_uplink_drift": null,
+  "transmitter_downlink_low": 401550000,
+  "transmitter_downlink_high": null,
+  "transmitter_downlink_drift": null,
+  "transmitter_mode": "FSK AX.100 Mode 5",
+  "transmitter_invert": false,
+  "transmitter_baud": 9600.0,
+  "transmitter_updated": "2026-03-31T11:10:13.067798Z",
+  "transmitter_status": "active",
+  "tle0": "0 DB-BECON-2-VU",
+  "tle1": "1 68468U 26067BE  26176.82724375  .00010659  00000-0  52933-3 0  9999",
+  "tle2": "2 68468  97.4545 135.0585 0008046  42.0700 318.1150 15.17831794 13241",
+  "tle_source": "Space-Track.org",
+  "center_frequency": null,
+  "observer": "jim",
+  "observation_frequency": 401550000,
+  "transmitter_unconfirmed": false,
+  "sat_id": "DJQS-0588-0767-3427-2831",
+  "_local_waterfall_path": "/home/verdantfoster/strf-main/pipeline/data/waterfall/14384785.png",
+  "_local_metadata_path": "/home/verdantfoster/strf-main/pipeline/data/metadata/14384785.json",
+  "_local_image_width": 832,
+  "_local_image_height": 1603
+}

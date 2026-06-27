@@ -1,0 +1,108 @@
+{
+  "id": 14385610,
+  "start": "2026-06-26T19:05:25Z",
+  "end": "2026-06-26T19:17:50Z",
+  "ground_station": 4022,
+  "transmitter": "RG4GDqKswUEAZHnJX5a9zr",
+  "norad_cat_id": 61758,
+  "payload": "https://network-satnogs.freetls.fastly.net/media/data_obs/2026/6/26/19/14385610/satnogs_14385610_2026-06-26T19-05-25.ogg",
+  "waterfall": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385610/waterfall_14385610_2026-06-26T19-05-25.png",
+  "demoddata": [
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385610/data_14385610_2026-06-26T19-15-04_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385610/data_14385610_2026-06-26T19-14-34_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385610/data_14385610_2026-06-26T19-13-34_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385610/data_14385610_2026-06-26T19-13-04_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385610/data_14385610_2026-06-26T19-12-34_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385610/data_14385610_2026-06-26T19-12-04_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385610/data_14385610_2026-06-26T19-11-34_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385610/data_14385610_2026-06-26T19-11-04_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385610/data_14385610_2026-06-26T19-10-34_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385610/data_14385610_2026-06-26T19-09-04_g1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385610/data_14385610_2026-06-26T19-09-04_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385610/data_14385610_2026-06-26T19-08-34_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385610/data_14385610_2026-06-26T19-08-04_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385610/data_14385610_2026-06-26T19-07-34_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385610/data_14385610_2026-06-26T19-07-04_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385610/data_14385610_2026-06-26T19-06-34_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14385610/data_14385610_2026-06-26T19-06-04_g0"
+    }
+  ],
+  "station_name": "SPUTNIX-VHF/UHF-Magadan",
+  "station_lat": 59.589261,
+  "station_lng": 150.832095,
+  "station_alt": 203,
+  "vetted_status": "good",
+  "vetted_user": null,
+  "vetted_datetime": null,
+  "archived": false,
+  "archive_url": null,
+  "client_version": "1.9.3",
+  "client_metadata": "{\"radio\": {\"name\": \"gr-satnogs\", \"version\": \"v2.3-compat-xxx-v2.3.5.0\", \"parameters\": {\"soapy-rx-device\": \"driver=rtlsdr\", \"samp-rate-rx\": \"2.048e6\", \"rx-freq\": \"401155000\", \"file-path\": \"/tmp/.satnogs/data/receiving_satnogs_14385610_2026-06-26T19-05-25.out\", \"waterfall-file-path\": \"/tmp/.satnogs/data/receiving_waterfall_14385610_2026-06-26T19-05-25.dat\", \"decoded-data-file-path\": \"/tmp/.satnogs/data/data_14385610\", \"doppler-correction-per-sec\": null, \"lo-offset\": null, \"ppm\": \"0\", \"rigctl-host\": \"rigctld\", \"rigctl-port\": \"4532\", \"gain-mode\": \"Overall\", \"gain\": \"38.6\", \"antenna\": \"RX\", \"dev-args\": null, \"stream-args\": null, \"tune-args\": null, \"other-settings\": null, \"dc-removal\": null, \"bb-freq\": null, \"bw\": null, \"enable-iq-dump\": \"0\", \"iq-file-path\": \"/tmp/iq\", \"udp-dump-host\": \"127.0.0.1\", \"udp-dump-port\": 57356, \"wpm\": null, \"baudrate\": null, \"framing\": null}}, \"latitude\": 59.589261, \"longitude\": 150.832095, \"elevation\": 203, \"frequency\": 401155000}",
+  "status": "good",
+  "waterfall_status": "unknown",
+  "waterfall_status_user": null,
+  "waterfall_status_datetime": null,
+  "rise_azimuth": 142.0,
+  "set_azimuth": 347.0,
+  "max_altitude": 42.0,
+  "transmitter_uuid": "RG4GDqKswUEAZHnJX5a9zr",
+  "transmitter_description": "Mode U - GMSK2k4 - USP",
+  "transmitter_type": "Transmitter",
+  "transmitter_uplink_low": null,
+  "transmitter_uplink_high": null,
+  "transmitter_uplink_drift": null,
+  "transmitter_downlink_low": 401155000,
+  "transmitter_downlink_high": null,
+  "transmitter_downlink_drift": null,
+  "transmitter_mode": "GMSK USP",
+  "transmitter_invert": false,
+  "transmitter_baud": 2400.0,
+  "transmitter_updated": "2024-11-12T23:53:19.427054Z",
+  "transmitter_status": "active",
+  "tle0": "0 OBJECT Z",
+  "tle1": "1 61758U 24199Z   26177.25383853  .00002347  00000-0  20328-3 0  9996",
+  "tle2": "2 61758  97.3237  16.2664 0007512  48.4771 311.7096 14.97993373136496",
+  "tle_source": "Space-Track.org",
+  "center_frequency": null,
+  "observer": "sputnix",
+  "observation_frequency": 401155000,
+  "transmitter_unconfirmed": false,
+  "sat_id": "QTUB-4133-0510-9509-3707",
+  "_local_waterfall_path": "/home/verdantfoster/strf-main/pipeline/data/waterfall/14385610.png",
+  "_local_metadata_path": "/home/verdantfoster/strf-main/pipeline/data/metadata/14385610.json",
+  "_local_image_width": 823,
+  "_local_image_height": 1603
+}

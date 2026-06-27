@@ -1,0 +1,72 @@
+{
+  "id": 14375727,
+  "start": "2026-06-26T18:51:08Z",
+  "end": "2026-06-26T19:02:56Z",
+  "ground_station": 4910,
+  "transmitter": "GkFZpBqmjXhLQ8SUWXJCq3",
+  "norad_cat_id": 60522,
+  "payload": "https://network-satnogs.freetls.fastly.net/media/data_obs/2026/6/26/18/14375727/satnogs_14375727_2026-06-26T18-51-08.ogg",
+  "waterfall": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14375727/waterfall_14375727_2026-06-26T18-51-08.png",
+  "demoddata": [
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14375727/data_14375727_2026-06-26T18-56-55"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14375727/data_14375727_2026-06-26T18-57-58"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14375727/data_14375727_2026-06-26T18-57-57_0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14375727/data_14375727_2026-06-26T18-57-57"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14375727/data_14375727_2026-06-26T18-57-56"
+    }
+  ],
+  "station_name": "Pelt-UHF-Fixed-Yagi",
+  "station_lat": 51.0425,
+  "station_lng": -114.099444,
+  "station_alt": 1055,
+  "vetted_status": "good",
+  "vetted_user": null,
+  "vetted_datetime": null,
+  "archived": false,
+  "archive_url": null,
+  "client_version": "2.1.2",
+  "client_metadata": "{\"radio\": {\"name\": \"gr-satnogs\", \"version\": null, \"parameters\": {\"mode\": \"GMSK\", \"soapy-rx-device\": \"driver=rtlsdr,bias=1\", \"samp-rate-rx\": \"2.048e+06\", \"rx-freq\": \"401520000\", \"file-path\": \"/tmp/.satnogs/data/receiving_satnogs_14375727_2026-06-26T18-51-08.out\", \"waterfall-file-path\": \"/tmp/.satnogs/data/receiving_waterfall_14375727_2026-06-26T18-51-08.dat\", \"decoded-data-file-path\": \"/tmp/.satnogs/data/data_14375727\", \"doppler-correction-per-sec\": null, \"lo-offset\": null, \"ppm\": null, \"rigctl-host\": \"rigctld\", \"rigctl-port\": \"4532\", \"gain-mode\": \"Overall\", \"gain\": \"42\", \"antenna\": \"RX\", \"dev-args\": null, \"stream-args\": null, \"tune-args\": null, \"other-settings\": null, \"dc-removal\": null, \"bb-freq\": null, \"bw\": null, \"enable-iq-dump\": \"1\", \"iq-file-path\": null, \"udp-dump-host\": null, \"udp-dump-port\": 57356, \"baud\": \"4800\"}}, \"latitude\": 51.0425, \"longitude\": -114.099444, \"elevation\": 1055.0, \"frequency\": 401520000}",
+  "status": "good",
+  "waterfall_status": "unknown",
+  "waterfall_status_user": null,
+  "waterfall_status_datetime": null,
+  "rise_azimuth": 13.0,
+  "set_azimuth": 195.0,
+  "max_altitude": 89.0,
+  "transmitter_uuid": "GkFZpBqmjXhLQ8SUWXJCq3",
+  "transmitter_description": "Mode U - GMSK 4k8 AX.25 TLM",
+  "transmitter_type": "Transmitter",
+  "transmitter_uplink_low": null,
+  "transmitter_uplink_high": null,
+  "transmitter_uplink_drift": null,
+  "transmitter_downlink_low": 401520000,
+  "transmitter_downlink_high": null,
+  "transmitter_downlink_drift": null,
+  "transmitter_mode": "GMSK",
+  "transmitter_invert": false,
+  "transmitter_baud": 4800.0,
+  "transmitter_updated": "2024-08-10T23:38:38.536795Z",
+  "transmitter_status": "active",
+  "tle0": "0 CONNECTA IOT-2",
+  "tle1": "1 60522U 24149BG  26177.17530214  .00005009  00000-0  20940-3 0  9993",
+  "tle2": "2 60522  97.3842 255.1847 0004887 298.9021  61.1726 15.24044943103261",
+  "tle_source": "Space-Track.org",
+  "center_frequency": null,
+  "observer": "pelt",
+  "observation_frequency": 401520000,
+  "transmitter_unconfirmed": false,
+  "sat_id": "XALK-4525-5943-5013-3699",
+  "_local_waterfall_path": "/home/verdantfoster/strf-main/pipeline/data/waterfall/14375727.png",
+  "_local_metadata_path": "/home/verdantfoster/strf-main/pipeline/data/metadata/14375727.json",
+  "_local_image_width": 832,
+  "_local_image_height": 1603
+}

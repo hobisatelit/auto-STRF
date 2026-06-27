@@ -1,0 +1,75 @@
+{
+  "id": 14383786,
+  "start": "2026-06-26T12:31:16Z",
+  "end": "2026-06-26T12:42:37Z",
+  "ground_station": 3794,
+  "transmitter": "egDU3ermobWNDDHBxHy37a",
+  "norad_cat_id": 59775,
+  "payload": "https://network-satnogs.freetls.fastly.net/media/data_obs/2026/6/26/12/14383786/satnogs_14383786_2026-06-26T12-31-16.ogg",
+  "waterfall": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383786/waterfall_14383786_2026-06-26T12-31-16.png",
+  "demoddata": [
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383786/data_14383786_2026-06-26T12-38-29_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383786/data_14383786_2026-06-26T12-37-13_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383786/data_14383786_2026-06-26T12-37-05_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383786/data_14383786_2026-06-26T12-37-02_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383786/data_14383786_2026-06-26T12-37-01_g1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383786/data_14383786_2026-06-26T12-37-01_g0"
+    }
+  ],
+  "station_name": "SPUTNIX-VHF/UHF-Murmansk",
+  "station_lat": 68.955,
+  "station_lng": 33.062,
+  "station_alt": 203,
+  "vetted_status": "good",
+  "vetted_user": null,
+  "vetted_datetime": null,
+  "archived": false,
+  "archive_url": null,
+  "client_version": "1.9.3",
+  "client_metadata": "{\"radio\": {\"name\": \"gr-satnogs\", \"version\": \"v2.3-compat-xxx-v2.3.5.0\", \"parameters\": {\"soapy-rx-device\": \"driver=rtlsdr\", \"samp-rate-rx\": \"2.048e6\", \"rx-freq\": \"401035000\", \"file-path\": \"/tmp/.satnogs/data/receiving_satnogs_14383786_2026-06-26T12-31-16.out\", \"waterfall-file-path\": \"/tmp/.satnogs/data/receiving_waterfall_14383786_2026-06-26T12-31-16.dat\", \"decoded-data-file-path\": \"/tmp/.satnogs/data/data_14383786\", \"doppler-correction-per-sec\": null, \"lo-offset\": null, \"ppm\": \"0\", \"rigctl-host\": \"rigctld\", \"rigctl-port\": \"4532\", \"gain-mode\": \"Overall\", \"gain\": \"38.6\", \"antenna\": \"RX\", \"dev-args\": null, \"stream-args\": null, \"tune-args\": null, \"other-settings\": null, \"dc-removal\": null, \"bb-freq\": null, \"bw\": null, \"enable-iq-dump\": \"0\", \"iq-file-path\": \"/tmp/iq\", \"udp-dump-host\": \"0.0.0.0\", \"udp-dump-port\": 57356, \"wpm\": null, \"baudrate\": null, \"framing\": null}}, \"latitude\": 68.955, \"longitude\": 33.062, \"elevation\": 203, \"frequency\": 401035000}",
+  "status": "good",
+  "waterfall_status": "unknown",
+  "waterfall_status_user": null,
+  "waterfall_status_datetime": null,
+  "rise_azimuth": 21.0,
+  "set_azimuth": 183.0,
+  "max_altitude": 43.0,
+  "transmitter_uuid": "egDU3ermobWNDDHBxHy37a",
+  "transmitter_description": "Main telemetry transmitter",
+  "transmitter_type": "Transmitter",
+  "transmitter_uplink_low": null,
+  "transmitter_uplink_high": null,
+  "transmitter_uplink_drift": null,
+  "transmitter_downlink_low": 401035000,
+  "transmitter_downlink_high": null,
+  "transmitter_downlink_drift": null,
+  "transmitter_mode": "GMSK USP",
+  "transmitter_invert": false,
+  "transmitter_baud": 2400.0,
+  "transmitter_updated": "2024-06-19T14:38:28.050969Z",
+  "transmitter_status": "active",
+  "tle0": "0 OBJECT C",
+  "tle1": "1 59775U 24092C   26177.24384646  .00012295  00000-0  43075-3 0  9991",
+  "tle2": "2 59775  97.6639 308.4762 0009644 147.7746 212.4085 15.29587722116967",
+  "tle_source": "Space-Track.org",
+  "center_frequency": null,
+  "observer": "sputnix",
+  "observation_frequency": 401035000,
+  "transmitter_unconfirmed": false,
+  "sat_id": "CXEH-2179-3370-4324-5788",
+  "_local_waterfall_path": "/home/verdantfoster/strf-main/pipeline/data/waterfall/14383786.png",
+  "_local_metadata_path": "/home/verdantfoster/strf-main/pipeline/data/metadata/14383786.json",
+  "_local_image_width": 823,
+  "_local_image_height": 1603
+}

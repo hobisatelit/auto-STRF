@@ -1,0 +1,81 @@
+{
+  "id": 14384783,
+  "start": "2026-06-26T19:27:58Z",
+  "end": "2026-06-26T19:33:07Z",
+  "ground_station": 3020,
+  "transmitter": "SME3yie8oqz9poZE4egUVi",
+  "norad_cat_id": 46914,
+  "payload": "https://network-satnogs.freetls.fastly.net/media/data_obs/2026/6/26/19/14384783/satnogs_14384783_2026-06-26T19-27-58.ogg",
+  "waterfall": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384783/waterfall_14384783_2026-06-26T19-27-58.png",
+  "demoddata": [
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384783/data_14384783_2026-06-26T19-29-48"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384783/data_14384783_2026-06-26T19-29-39"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384783/data_14384783_2026-06-26T19-32-08_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384783/data_14384783_2026-06-26T19-32-08_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384783/data_14384783_2026-06-26T19-32-08"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384783/data_14384783_2026-06-26T19-31-09_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384783/data_14384783_2026-06-26T19-31-09"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14384783/data_14384783_2026-06-26T19-30-28"
+    }
+  ],
+  "station_name": "Jim UHF",
+  "station_lat": 33.797628,
+  "station_lng": -79.159123,
+  "station_alt": 12,
+  "vetted_status": "good",
+  "vetted_user": null,
+  "vetted_datetime": null,
+  "archived": false,
+  "archive_url": null,
+  "client_version": "1.8.1",
+  "client_metadata": "{\"radio\": {\"name\": \"gr-satnogs\", \"version\": \"v2.3-compat-xxx-v2.3.5.0\", \"parameters\": {\"soapy-rx-device\": \"driver=sdrplay\", \"samp-rate-rx\": \"384000\", \"rx-freq\": \"401060080\", \"file-path\": \"/tmp/.satnogs/data/receiving_satnogs_14384783_2026-06-26T19-27-58.out\", \"waterfall-file-path\": \"/tmp/.satnogs/data/receiving_waterfall_14384783_2026-06-26T19-27-58.dat\", \"decoded-data-file-path\": \"/tmp/.satnogs/data/data_14384783\", \"doppler-correction-per-sec\": null, \"lo-offset\": null, \"ppm\": null, \"rigctl-port\": \"4532\", \"gain-mode\": \"Settings Field\", \"gain\": null, \"antenna\": \"RX\", \"dev-args\": null, \"stream-args\": null, \"tune-args\": null, \"other-settings\": \"RFGR=1,IFGR=36\", \"dc-removal\": null, \"bb-freq\": null, \"bw\": \"300000\", \"enable-iq-dump\": \"0\", \"iq-file-path\": null, \"udp-dump-host\": null, \"udp-dump-port\": 57356, \"wpm\": null, \"baudrate\": \"9600\", \"framing\": \"ax100_mode5\"}}, \"latitude\": 33.797628, \"longitude\": -79.159123, \"elevation\": 12, \"frequency\": 401060080}",
+  "status": "good",
+  "waterfall_status": "unknown",
+  "waterfall_status_user": null,
+  "waterfall_status_datetime": null,
+  "rise_azimuth": 285.0,
+  "set_azimuth": 110.0,
+  "max_altitude": 85.0,
+  "transmitter_uuid": "SME3yie8oqz9poZE4egUVi",
+  "transmitter_description": "Mode U",
+  "transmitter_type": "Transmitter",
+  "transmitter_uplink_low": null,
+  "transmitter_uplink_high": null,
+  "transmitter_uplink_drift": null,
+  "transmitter_downlink_low": 401060080,
+  "transmitter_downlink_high": null,
+  "transmitter_downlink_drift": null,
+  "transmitter_mode": "FSK AX.100 Mode 5",
+  "transmitter_invert": false,
+  "transmitter_baud": 9600.0,
+  "transmitter_updated": "2022-10-15T21:30:58.576920Z",
+  "transmitter_status": "active",
+  "tle0": "0 KSM1-B",
+  "tle1": "1 46914U 20081K   26176.94083980  .00009445  00000-0  37722-3 0  9994",
+  "tle2": "2 46914  36.9036  14.7008 0005938 343.0678  16.9872 15.24627474313528",
+  "tle_source": "Space-Track.org",
+  "center_frequency": null,
+  "observer": "jim",
+  "observation_frequency": 401060080,
+  "transmitter_unconfirmed": false,
+  "sat_id": "MWRL-6562-0983-3996-2101",
+  "_local_waterfall_path": "/home/verdantfoster/strf-main/pipeline/data/waterfall/14384783.png",
+  "_local_metadata_path": "/home/verdantfoster/strf-main/pipeline/data/metadata/14384783.json",
+  "_local_image_width": 832,
+  "_local_image_height": 1603
+}

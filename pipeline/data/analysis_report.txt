@@ -1,0 +1,8 @@
+STRF Automation Pipeline — Laporan Hasil
+Dibuat: 2026-06-26T20:12:55 UTC
+
+Jumlah observasi diproses: 1
+RMSE rata-rata sebelum fitting: 0.133542 kHz
+RMSE rata-rata sesudah fitting: 0.035297 kHz
+Penurunan RMSE: 73.57%
+Estimasi error posisi akhir: 22.73 km

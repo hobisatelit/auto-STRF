@@ -1,0 +1,210 @@
+{
+  "id": 14385707,
+  "start": "2026-06-26T18:15:35Z",
+  "end": "2026-06-26T18:23:18Z",
+  "ground_station": 3244,
+  "transmitter": "GCmN6RULea8dAT7Qoat8z2",
+  "norad_cat_id": 68635,
+  "payload": "https://network-satnogs.freetls.fastly.net/media/data_obs/2026/6/26/18/14385707/satnogs_14385707_2026-06-26T18-15-35.ogg",
+  "waterfall": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/waterfall_14385707_2026-06-26T18-15-35.png",
+  "demoddata": [
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-11_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-11"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-06_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-06"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-02"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-01"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-17-57"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-17-56"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-17-53"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-17-48"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-17-44"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-17-41"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-20-26"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-20-08"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-20-03"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-19-59"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-19-54"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-19-51"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-19-50"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-19-36"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-19-32"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-19-31"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-19-27"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-19-26"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-19-23"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-19-16"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-19-14"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-19-09"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-19-06"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-19-05"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-19-01"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-19-00"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-56_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-56"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-51_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-51"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-47"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-46"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-42"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-41"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-38"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-36"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-33"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-31"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-29"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-26"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-24"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-21"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-20"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-16"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385707/data_14385707_2026-06-26T18-18-15"
+    }
+  ],
+  "station_name": "VK4JBE-TESTING",
+  "station_lat": -27.492,
+  "station_lng": 153.069,
+  "station_alt": 29,
+  "vetted_status": "good",
+  "vetted_user": null,
+  "vetted_datetime": null,
+  "archived": false,
+  "archive_url": null,
+  "client_version": "1.8.1",
+  "client_metadata": "{\"radio\": {\"name\": \"gr-satnogs\", \"version\": \"v2.3-compat-xxx-v2.3.5.0\", \"parameters\": {\"soapy-rx-device\": \"driver=rtlsdr\", \"samp-rate-rx\": \"2.048e6\", \"rx-freq\": \"437250000\", \"file-path\": \"/tmp/.satnogs/data/receiving_satnogs_14385707_2026-06-26T18-15-35.out\", \"waterfall-file-path\": \"/tmp/.satnogs/data/receiving_waterfall_14385707_2026-06-26T18-15-35.dat\", \"decoded-data-file-path\": \"/tmp/.satnogs/data/data_14385707\", \"doppler-correction-per-sec\": null, \"lo-offset\": null, \"ppm\": null, \"rigctl-port\": \"4532\", \"gain-mode\": \"Overall\", \"gain\": \"3.2\", \"antenna\": \"RX\", \"dev-args\": null, \"stream-args\": null, \"tune-args\": null, \"other-settings\": null, \"dc-removal\": null, \"bb-freq\": null, \"bw\": null, \"enable-iq-dump\": \"0\", \"iq-file-path\": null, \"udp-dump-host\": null, \"udp-dump-port\": 57356, \"wpm\": null, \"baudrate\": \"9600\", \"framing\": \"ax25\"}}, \"latitude\": -27.492, \"longitude\": 153.069, \"elevation\": 29, \"frequency\": 437250000}",
+  "status": "good",
+  "waterfall_status": "unknown",
+  "waterfall_status_user": null,
+  "waterfall_status_datetime": null,
+  "rise_azimuth": 315.0,
+  "set_azimuth": 158.0,
+  "max_altitude": 54.0,
+  "transmitter_uuid": "GCmN6RULea8dAT7Qoat8z2",
+  "transmitter_description": "AstroDev Li-2",
+  "transmitter_type": "Transceiver",
+  "transmitter_uplink_low": 437250000,
+  "transmitter_uplink_high": null,
+  "transmitter_uplink_drift": null,
+  "transmitter_downlink_low": 437250000,
+  "transmitter_downlink_high": null,
+  "transmitter_downlink_drift": null,
+  "transmitter_mode": "GMSK",
+  "transmitter_invert": false,
+  "transmitter_baud": 9600.0,
+  "transmitter_updated": "2026-04-05T07:29:14.417527Z",
+  "transmitter_status": "active",
+  "tle0": "0 OBJECT J",
+  "tle1": "1 68635U 26074J   26177.26576768  .00011709  00000-0  46448-3 0  9994",
+  "tle2": "2 68635  60.0206 143.1722 0031352  31.8108 328.4858 15.25383369 12173",
+  "tle_source": "Space-Track.org",
+  "center_frequency": null,
+  "observer": "satcolintel5",
+  "observation_frequency": 437250000,
+  "transmitter_unconfirmed": false,
+  "sat_id": "GLFY-8231-7125-4883-6529",
+  "_local_waterfall_path": "/home/verdantfoster/strf-main/pipeline/data/waterfall/14385707.png",
+  "_local_metadata_path": "/home/verdantfoster/strf-main/pipeline/data/metadata/14385707.json",
+  "_local_image_width": 832,
+  "_local_image_height": 1603
+}

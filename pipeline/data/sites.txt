@@ -1,0 +1,10 @@
+# No ID   Latitude Longitude   Elev   Observer
+9999 IT   -5.1210  105.3090     96   ITERA Lampung Selatan
+1466 SN    51.7213    5.0300      5   SatNOGS/ITERA Pipeline
+3355 SN    34.1400 -117.8700    244   SatNOGS/ITERA Pipeline
+3741 SN    32.2885 -111.8680    331   SatNOGS/ITERA Pipeline
+3020 SN    33.7976  -79.1591     12   SatNOGS/ITERA Pipeline
+4814 SN    -5.3620  105.3110    120   SatNOGS/ITERA Pipeline
+4451 SN    -8.7356  115.1948     10   SatNOGS/ITERA Pipeline
+7158 SN   -31.7600  115.7600     40   SatNOGS/ITERA Pipeline
+1864 SN    63.8540   20.2080     35   SatNOGS/ITERA Pipeline

@@ -1,0 +1,1328 @@
+AUTOMASI EKSTRAKSI SPEKTROGRAM UNTUK OPTIMASI TLE
+SATELIT LEO PADA EKOSISTEM STRF
+
+PROPOSAL SKRIPSI
+
+M. Winarya Sepindiarto
+122290096
+
+PROGRAM STUDI SAINS ATMOSFER DAN KEPLANETAN
+FAKULTAS SAINS
+INSTITUT TEKNOLOGI SUMATERA
+LAMPUNG SELATAN
+2026
+
+AUTOMASI EKSTRAKSI SPEKTROGRAM UNTUK OPTIMASI TLE
+SATELIT LEO PADA EKOSISTEM STRF
+
+PROPOSAL SKRIPSI
+Diajukan sebagai syarat maju seminar proposal
+
+M. Winarya Sepindiarto
+122290096
+
+PROGRAM STUDI SAINS ATMOSFER DAN KEPLANETAN
+FAKULTAS SAINS
+INSTITUT TEKNOLOGI SUMATERA
+LAMPUNG SELATAN
+2026
+
+i
+
+HALAMAN PENGESAHAN
+Naskah Proposal Tugas Akhir dengan judul "Automasi Ekstraksi Spektrogram untuk Optimasi TLE Satelit LEO pada Ekosistem STRF" adalah benar dibuat oleh saya
+sendiri dan belum pernah dibuat dan diserahkan sebelumnya, baik sebagian ataupun
+seluruhnya, baik oleh saya sendiri ataupun orang lain, baik di Institut Teknologi Sumatera maupun di institusi pendidikan lainnya.
+Lampung Selatan, 19 April 2026
+Penulis
+
+M. Winarya Sepindiarto,
+NIM. 122290096
+
+Diperiksa dan disetujui oleh,
+Pembimbing I
+
+Pembimbing II
+
+Ridlo Wahyudi Wibowo, S.Si., M.Si., M.Sc.
+NIP 199007252022031002
+
+Alka Budi Wahidin, S.Si., M.Si.
+NIP 199405200620241002
+
+ii
+
+ABSTRAK
+Automasi Ekstraksi Spektrogram untuk Optimasi TLE Satelit LEO pada Ekosistem STRF
+
+M. Winarya Sepindiarto (122290096)
+Pembimbing: Ridlo Wahyudi Wibowo, S.Si., M.Si., M.Sc. dan Alka Budi Wahidin,
+S.Si., M.Si.
+Degradasi akurasi Two-Line Element (TLE) pada satelit Low Earth Orbit (LEO) akibat pengaruh perturbasi atmosfer memerlukan pembaruan elemen orbital secara berkala demi menjaga keandalan pelacakan objek antariksa. Penelitian ini mengembangkan sistem pipeline automasi ekstraksi kurva Doppler dari citra spektrogram (waterfall) menggunakan OpenCV, ekosistem STRF, dan SatNOGS API dengan objek uji
+utama satelit ekuatorial LAPAN-A2. Data observasi diakuisisi secara fleksibel dari
+jaringan stasiun bumi global yang terdaftar di SatNOGS, dengan menempatkan Stasiun Bumi ITERA sebagai stasiun utama pembanding untuk dievaluasi kontribusinya.
+Hasil penelitian menunjukkan bahwa sistem automasi ini berhasil mengunduh dan
+memproses data observasi secara mandiri serta menghasilkan pembaruan TLE teroptimasi dengan penurunan nilai Root Mean Square Error (RMSE) frekuensi yang signifikan, di mana perpaduan data stasiun bumi global memberikan koreksi orbit yang
+lebih menyeluruh dibandingkan konfigurasi stasiun bumi tunggal.
+Kata kunci: TLE, LAPAN-A2, STRF, OpenCV, SatNOGS.
+
+iii
+
+ABSTRACT
+Automation of Spectrogram Extraction for LEO Satellite TLE Optimization in the
+STRF Ecosystem
+
+M. Winarya Sepindiarto (122290096)
+Advisors : Ridlo Wahyudi Wibowo, S.Si., M.Si., M.Sc. and Alka Budi Wahidin,
+S.Si., M.Si.
+The accuracy degradation of Two-Line Elements (TLE) for Low Earth Orbit (LEO)
+satellites caused by atmospheric perturbations requires regular orbital element updates to maintain tracking reliability. This study develops an automated pipeline for
+extracting Doppler curves from spectrogram (waterfall) images using OpenCV, the
+STRF ecosystem, and the SatNOGS API, focusing on the LAPAN-A2 equatorial satellite as the primary test object. Observation data were gathered globally from the
+SatNOGS ground station network, utilizing the ITERA Ground Station as the primary baseline for comparison. The results demonstrate that the automated pipeline
+successfully ingests and processes observation data independently, generating optimized TLE updates with a significant reduction in frequency Root Mean Square Error
+(RMSE), wherein the integration of global ground station data provides a more comprehensive orbital correction compared to a single ground station configuration.
+Keywords : Keywords: TLE, LAPAN-A2, STRF, OpenCV, SatNOGS.
+
+iv
+
+MOTTO
+
+You can never protect yourself 100 percent. What you do is protect yourself as much
+as possible and mitigate risk to an acceptable degree. You can never remove all risk.
+
+v
+
+HALAMAN PERSEMBAHAN
+
+Untuk Emak dan Bapak
+di kampung
+
+vi
+
+KATA PENGANTAR
+Puji syukur penulis panjatkan ke hadirat Allah SWT atas berkah dan rahmat-Nya
+sehingga skripsi ini dapat terselesaikan dengan baik. Skripsi ini dibuat untuk menyelesaikan pendidikan jenjang sarjana pada Program Studi Sains Atmosfer dan Keplanetan, Fakultas Sains, Institut Teknologi Sumatera. Penyusunan skripsi ini banyak
+mendapat bantuan dan dukungan dari berbagai pihak sehingga dalam kesempatan ini,
+dengan penuh kerendahan hati, penulis mengucapkan terima kasih kepada:
+1. Kedua orang Tua saya yang senantiasa mendukung dan memotivasi saya dalam
+penulisan Skripsi ini sehingga saya dapat melakukan penelitian dan penulisan
+dengan baik,
+2. Pak Hendra Agus Prastyo, S.Si., M.Si. selaku Koordinator Program Studi Sains
+Atmosfer dan Keplanetan,
+3. Pak Ridlo Wahyudi Wibowo, S.Si., M.Si., M.Sc. selaku Dosen Pembimbing 1
+saya yang telah membimbing dan membantu saya dalam penelitian skripsi ini,
+4. Pak Alka Budi Wahidin, S.Si., M.Si. selaku Dosen Pembimbing 2 saya yang
+telah membantu saya dalam penulisan skripsi ini,
+5. Pak Adit dan Mas Adit dari OAIL yang sudah berkenan untuk memperbolehkan
+saya menggunakan ruangan OAIL untuk tempat penelitian dan tempat mengerjakan skripsi ini.
+6. teman-teman sejawat yang telah memberi dukungan dan motivasi selama proses
+penulisan skripsi ini.
+7. seluruh pihak yang tidak dapat saya sebutkan satu per satu yang telah membantu
+saya dalam menyelesaikan skripsi ini.
+Penulis menyadari bahwa penyusunan Skripsi ini jauh dari sempurna. Akhir
+kata penulis mohon maaf yang sebesar-besarnya apabila ada kekeliruan di dalam penulisan skripsi ini.
+
+Lampung Selatan, 19 April 2026
+
+M. Winarya Sepindiarto
+
+vii
+
+DAFTAR ISI
+
+HALAMAN JUDUL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+1
+
+HALAMAN JUDUL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+i
+
+HALAMAN PENGESAHAN . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+ii
+
+ABSTRAK . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+iii
+
+ABSTRACT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+iv
+
+MOTTO . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+v
+
+HALAMAN PERSEMBAHAN . . . . . . . . . . . . . . . . . . . . . . . . .
+
+vi
+
+KATA PENGANTAR . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . vii
+DAFTAR ISI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . viii
+DAFTAR TABEL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+x
+
+DAFTAR GAMBAR . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+xi
+
+I
+
+PENDAHULUAN . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+1
+
+1.1
+
+Latar Belakang . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+1
+
+1.2
+
+Rumusan Masalah . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+3
+
+1.3
+
+Tujuan Penelitian . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+3
+
+1.4
+
+Batasan Masalah . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+3
+
+1.5
+
+Manfaat Penelitian . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+4
+
+1.5.1 Manfaat Akademis . . . . . . . . . . . . . . . . . . . . . . . .
+
+4
+
+1.5.2 Manfaat Praktis . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+4
+
+Sistematika Penulisan . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+5
+
+II TINJAUAN PUSTAKA . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+6
+
+1.6
+
+2.1
+
+Karakteristik Umum Orbit Rendah Bumi (LEO) . . . . . . . . . . . .
+
+6
+
+2.1.1 Satelit LAPAN-A2 . . . . . . . . . . . . . . . . . . . . . . . .
+
+7
+
+2.2
+
+Two-Line Element (TLE) dan Model Propagasi SGP4 . . . . . . . . .
+
+8
+
+2.3
+
+Efek Doppler pada Komunikasi Satelit LEO . . . . . . . . . . . . . .
+
+9
+
+2.4
+
+Jaringan Stasiun Bumi Terbuka SatNOGS . . . . . . . . . . . . . . .
+
+10
+
+2.5
+
+Pengolahan Citra dengan OpenCV . . . . . . . . . . . . . . . . . . .
+
+10
+
+2.6
+
+Penentuan Orbit dengan Ekosistem STRF . . . . . . . . . . . . . . .
+
+13
+
+2.6.1 Mekanisme Fitting Orbit pada Utilitas rffit . . . . . . . . . .
+
+14
+
+viii
+
+III METODE PENELITIAN . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+16
+
+3.1
+
+Waktu dan Tempat Penelitian . . . . . . . . . . . . . . . . . . . . . .
+
+16
+
+3.2
+
+Perangkat Lunak (Software) dan Lingkungan Penelitian . . . . . . . .
+
+16
+
+3.3
+
+Parameter Teknis LAPAN-A2 . . . . . . . . . . . . . . . . . . . . .
+
+16
+
+3.4
+
+Alur Penelitian . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+17
+
+3.4.1 Pengambilan Data Observasi dari SatNOGS API . . . . . . . . .
+
+19
+
+3.4.2 Ekstraksi Kurva Doppler dengan OpenCV . . . . . . . . . . . .
+
+20
+
+3.4.3 Konversi Koordinat Piksel ke Frekuensi dan Waktu . . . . . . .
+
+21
+
+3.4.4 Fitting TLE dengan Utilitas rffit STRF . . . . . . . . . . . .
+
+22
+
+3.5
+
+Analisis Data . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+22
+
+3.6
+
+Jadwal Kegiatan . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+23
+
+DAFTAR PUSTAKA . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+25
+
+ix
+
+DAFTAR TABEL
+Tabel 2.1
+
+Parameter teknis LAPAN-A2 yang relevan terhadap penelitian ini. . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+Tabel 3.1
+Tabel 3.2
+
+8
+
+Parameter tetap yang digunakan dalam sistem automasi penelitian. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+17
+
+Jadwal Kegiatan Penelitian . . . . . . . . . . . . . . . . . .
+
+24
+
+x
+
+DAFTAR GAMBAR
+Gambar 2.1
+
+Jenis Satelit Berdasarkan Ketinggian Orbit. . . . . . . . . . .
+
+6
+
+Gambar 2.2
+
+Satelit LAPAN-A2 / ORARI. . . . . . . . . . . . . . . . . .
+
+7
+
+Gambar 2.3
+
+Ilustrasi format TLE satelit LAPAN-A2. . . . . . . . . . . .
+
+8
+
+Gambar 3.1
+
+Diagram alir workflow sistem pipeline perangkat lunak automasi. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+Gambar 3.2
+
+Diagram alir workflow alur penelitian dan tahapan analisis
+akademis. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+Gambar 3.3
+
+18
+19
+
+Ilustrasi tahapan pengolahan citra waterfall: (a) citra asli, (b)
+setelah grayscale, (c) setelah Gaussian filter, (d) setelah thresholding, (e) kurva centroid yang diekstraksi. . . . . . . . . .
+
+xi
+
+20
+
+BAB I
+PENDAHULUAN
+1.1
+
+Latar Belakang
+Sejak era operasional satelit modern yang berkembang pesat pada dekade 1990-
+
+an hingga saat ini, ribuan objek buatan manusia telah ditempatkan pada Low Earth
+Orbit (LEO), yaitu orbit pada ketinggian antara 160 hingga 2.000 kilometer di atas
+permukaan bumi. Berdasarkan data katalog Space-Track.org, per tahun 2024 terdapat
+lebih dari 10.000 objek aktif yang mengorbit di LEO, dengan laju pertumbuhan yang
+meningkat signifikan sejak dimulainya penggelaran konstelasi besar seperti Starlink
+pada tahun 2019. Satelit-satelit LEO dimanfaatkan untuk tiga kelompok fungsi utama,
+yaitu pemantauan bumi (Earth observation), komunikasi pita lebar (broadband communication), serta penelitian ilmiah dan pengembangan teknologi antariksa. Keberadaan objek-objek ini memerlukan pemantauan lintasan yang kontinu dan berpresisi
+tinggi, baik untuk keperluan operasional komunikasi maupun penghindaran tabrakan
+(collision avoidance).
+Standar parameter orbit yang digunakan secara global untuk objek di LEO adalah format Two-Line Element (TLE), yang dikelola dan didistribusikan secara publik
+oleh Space-Track.org milik Komando Antariksa Amerika Serikat (USSPACECOM).
+Namun, karena TLE merupakan representasi elemen rata-rata (mean elements) yang
+disesuaikan dengan propagator SGP4, akurasinya akan mengalami degradasi seiring
+berjalannya waktu akibat pengaruh perturbasi gaya gravitasi yang tidak homogen dan
+hambatan atmosfer (atmospheric drag) [1]. Pada saat epoch, TLE umumnya memiliki akurasi sekitar 1 km untuk satelit LEO [2], namun error propagasi tumbuh seiring
+waktu dengan laju sekitar 1–3 km per hari bergantung pada ketinggian orbit dan karakteristik drag satelit [3]. Untuk objek dengan hambatan atmosfer tinggi di LEO rendah,
+error posisi dapat meningkat hingga puluhan kilometer dalam kurun satu minggu [4].
+Degradasi ini bersifat kumulatif dan semakin signifikan seiring bertambahnya usia
+TLE. Oleh karena itu, pembaruan atau koreksi nilai TLE secara berkala menjadi suatu keharusan bagi setiap pengelola satelit LEO yang membutuhkan akurasi penentuan
+posisi di bawah 1 km.
+Pembaruan TLE secara mandiri dapat dilakukan dengan memanfaatkan stasiun
+bumi (Ground Station / GS) yang menangkap sinyal radio yang dipancarkan satelit. Sinyal yang diterima mengalami pergeseran frekuensi akibat efek Doppler seiring
+pergerakan satelit melintasi cakupan stasiun bumi. Salah satu pendekatan yang telah
+
+1
+
+diterapkan dalam sejumlah penelitian adalah pemanfaatan spektrogram (waterfall display) dari jaringan SatNOGS untuk mengekstrak kurva Doppler aktual, yang kemudian dibandingkan dengan prediksi teoretis menggunakan perangkat lunak Satellite
+Tracking with Radio Frequency (STRF) guna menghasilkan TLE terkoreksi. Meskipun metode ini terbukti efektif, proses ekstraksi titik-titik data pada gambar waterfall
+hingga saat ini masih sepenuhnya bergantung pada intervensi manual (manual tabulating): seorang operator harus mengidentifikasi dan mencatat koordinat piksel kurva
+Doppler secara satu per satu. Ketergantungan ini menjadikan metode tersebut tidak
+skalabel (not scalable) apabila diterapkan pada pemantauan berkelanjutan terhadap
+puluhan hingga ratusan objek LEO secara simultan.
+Sebagai studi kasus dan pembuktian konsep (proof of concept), penelitian ini
+menggunakan satelit LAPAN-A2 (NORAD ID: 40931), satelit ekuatorial pertama
+Indonesia yang dikembangkan oleh Lembaga Penerbangan dan Antariksa Nasional
+(LAPAN). Mengorbit pada ketinggian rata-rata 650 km dengan inklinasi ±7,97◦ terhadap ekuator, LAPAN-A2 memiliki periode orbit sekitar 97,3 menit sehingga melintasi wilayah Indonesia rata-rata lima hingga tujuh kali per hari berdasarkan data
+historis TLE dari Space-Track.org. Secara geometris, orbit ekuatorial LAPAN-A2
+menempatkannya pada jalur lintasan (ground track) yang secara konsisten berada dalam radius cakupan antena stasiun ITERA (≤ 900 km untuk El ≥ 30◦ ), karena inklinasi orbitnya (±7,97◦ ) menempatkan ground track satelit pada rentang lintang yang
+selalu dapat diamati dari ITERA (lintang −5,12◦ LS). Kondisi geometri ini menghasilkan sudut elevasi puncak (maximum elevation angle) yang dapat melebihi 70◦ dan
+pergeseran Doppler total yang dapat mencapai ±3,5 kHz pada frekuensi transmisi
+435,880 MHz. Profil geometri lintasan ini menghasilkan kurva Doppler dengan kontras piksel yang tinggi pada gambar waterfall serta nilai Signal-to-Noise Ratio (SNR)
+yang memenuhi ambang batas minimum untuk ekstraksi kurva secara otomatis. Meskipun demikian, metodologi yang dikembangkan dalam penelitian ini dirancang agar
+dapat diterapkan pada satelit LEO lain yang memancarkan sinyal radio pada pita frekuensi yang kompatibel dengan penerima SatNOGS, dengan syarat lintasan menghasilkan sudut elevasi puncak di atas 30◦ .
+Melalui skrip automasi yang terintegrasi langsung dengan modul fitting dari STRF, proses pengunduhan gambar waterfall, ekstraksi koordinat kurva Doppler,
+hingga koreksi nilai orbit dapat berjalan tanpa campur tangan manusia (fully automated end-to-end pipeline). Sistem ini dikembangkan secara parametrik — seluruh
+parameter konfigurasi satelit, frekuensi, dan identitas stasiun bumi dapat diubah tanpa
+memodifikasi kode inti — sehingga memungkinkan penerapannya pada satelit LEO
+
+2
+
+lain yang teramati oleh jaringan SatNOGS, dengan pengujian dan validasi lanjutan
+pada masing-masing objek yang dituju.
+1.2
+
+Rumusan Masalah
+Berdasarkan latar belakang yang telah dipaparkan, rumusan masalah dalam pe-
+
+nelitian ini adalah:
+1. Bagaimana merancang sistem pipeline automasi untuk mengekstraksi kurva
+Doppler secara presisi dari citra spektrogram SatNOGS menggunakan OpenCV dan STRF?
+2. Bagaimana akurasi hasil optimasi TLE satelit LAPAN-A2 yang diperoleh dari
+pemrosesan data Stasiun Bumi ITERA dibandingkan dengan jaringan stasiun
+bumi global lainnya?
+1.3
+
+Tujuan Penelitian
+
+Tujuan yang ingin dicapai dalam penelitian ini adalah:
+1. Membangun dan menguji infrastruktur pipeline automasi untuk ekstraksi kurva
+Doppler pada citra spektrogram SatNOGS guna menghasilkan pembaruan TLE
+satelit LAPAN-A2 yang teroptimasi.
+2. Menganalisis perbandingan akurasi hasil fitting TLE antara penggunaan data lokal Stasiun Bumi ITERA terhadap kontribusi data jaringan stasiun bumi global
+SatNOGS.
+1.4
+
+Batasan Masalah
+Agar ruang lingkup penelitian ini tetap fokus dan terarah, ditetapkan beberapa
+
+batasan masalah sebagai berikut:
+1. Objek observasi dan pengujian sistem difokuskan pada satelit Low Earth Orbit (LEO) jenis ekuatorial, dengan satelit LAPAN-A2 sebagai objek penelitian
+utama.
+2. Penelitian ini tidak mencakup perancangan maupun konfigurasi perangkat keras
+(hardware) antena secara fisik. Akuisisi citra spektrogram (waterfall) sepenuhnya bersumber dari jaringan stasiun bumi global secara open-source melalui
+SatNOGS API.
+3. Stasiun Bumi ITERA difungsikan sebagai stasiun pembanding utama, di mana
+kontribusi datanya dikomparasikan terhadap gabungan data dari stasiun bumi
+global yang terdaftar pada ekosistem SatNOGS.
+3
+
+4. Proses optimasi dan kalkulasi fitting elemen orbital dibatasi menggunakan fungsionalitas algoritma rffit pada ekosistem Satellite Tracking with Radio Frequency (STRF).
+5. Sistem automasi ekstraksi kurva Doppler dibangun menggunakan bahasa pemrograman Python 3.10 dan bash script dengan memanfaatkan pustaka OpenCV,
+dan seluruh rangkaian komputasi berjalan di atas sistem operasi Linux.
+1.5
+
+Manfaat Penelitian
+Hasil dari penelitian ini diharapkan dapat memberikan kontribusi dan manfaat
+
+nyata, baik dari aspek akademis maupun praktis sebagai berikut:
+1.5.1
+
+Manfaat Akademis
+
+1. Memberikan kontribusi ilmiah dalam bidang astrodinamika dan teknologi satelit, khususnya mengenai metodologi pembaruan elemen orbital (TLE fitting)
+satelit LEO ekuatorial menggunakan interkoneksi data pengamatan lintas stasiun bumi global.
+2. Menjadi referensi akademis bagi penelitian lanjutan di Laboratorium Komputasi Sains Atmosfer dan Keplanetan mengenai pemanfaatan algoritma computer
+vision (OpenCV) untuk otomatisasi ekstraksi parameter fisis dari spektrogram
+radio.
+1.5.2
+
+Manfaat Praktis
+
+1. Menghasilkan sebuah model pipeline program open-source berbasis Python
+yang dapat digunakan secara mandiri oleh operator stasiun bumi untuk memperbarui TLE satelit secara otomatis tanpa ketergantungan penuh pada pembaruan
+berkala dari katalog pusat.
+2. Memberikan hasil evaluasi kuantitatif dan pemetaan performa bagi Stasiun Bumi
+ITERA mengenai efektivitas serta akurasi kontribusi datanya di dalam jaringan global SatNOGS, sebagai basis pengembangan infrastruktur stasiun bumi ke
+depan.
+3. Membuat referensi yang dapat digunakan oleh komunitas amatir radio dan pengamat satelit internasional dalam mengoptimalkan akurasi pelacakan satelit
+LAPAN-A2 melalui ketersediaan elemen TLE baru yang diperbarui secara otomatis dan lebih presisi.
+
+4
+
+1.6
+
+Sistematika Penulisan
+
+Skripsi ini tersusun atas lima bab dengan rincian sebagai berikut:
+BAB I : PENDAHULUAN
+Bab ini menguraikan latar belakang permasalahan degradasi akurasi TLE pada satelit
+LEO dan keterbatasan metode ekstraksi Doppler manual yang ada, rumusan masalah,
+tujuan penelitian, batasan masalah, manfaat penelitian, dan sistematika penulisan laporan.
+BAB II : TINJAUAN PUSTAKA
+Bab ini memaparkan teori-teori dan penelitian terdahulu yang menjadi landasan, meliputi karakteristik dan perturbasi orbit LEO, format TLE beserta propagator SGP4,
+prinsip efek Doppler pada komunikasi satelit, arsitektur jaringan SatNOGS dan format
+data waterfall, teknik Computer Vision untuk ekstraksi kurva dari citra, serta ekosistem perangkat lunak STRF. Karakteristik teknis LAPAN-A2 dibahas secara spesifik
+sebagai representasi objek LEO ekuatorial yang menjadi sasaran validasi.
+BAB III : METODE PENELITIAN
+Bab ini menjelaskan metode yang digunakan dalam penelitian, meliputi waktu dan
+tempat pengumpulan data observasi LAPAN-A2, spesifikasi perangkat keras dan lunak yang digunakan, serta rancangan alur kerja (flowchart) sistem automasi secara
+lengkap, mulai dari pengunduhan data SatNOGS hingga keluaran TLE terkoreksi dengan LAPAN-A2 sebagai objek uji.
+LAMPIRAN
+Lampiran memuat kode sumber (source code) Python sistem automasi secara lengkap,
+contoh data observasi dan log LAPAN-A2 yang digunakan dalam pengujian, hasil
+fitting TLE dari STRF, serta data pendukung lainnya yang dirujuk dalam pembahasan.
+
+5
+
+BAB II
+TINJAUAN PUSTAKA
+2.1
+
+Karakteristik Umum Orbit Rendah Bumi (LEO)
+
+Gambar 2.1 Jenis Satelit Berdasarkan Ketinggian Orbit.
+
+Low Earth Orbit (LEO) adalah wilayah ruang angkasa di sekitar bumi pada
+ketinggian antara 160 hingga 2.000 kilometer di atas permukaan laut [5]. Satelit
+yang beroperasi di orbit ini bergerak dengan kecepatan sekitar 7 hingga 8 kilometer per detik, sehingga waktu yang dibutuhkan untuk menyelesaikan satu kali putaran
+mengelilingi bumi berkisar antara 88 hingga 127 menit. Karena bergerak sangat cepat, satelit LEO hanya bisa terlihat atau terjangkau oleh sebuah stasiun bumi selama
+beberapa menit dalam sekali lintasan [6].
+Berdasarkan sudut kemiringan orbitnya (inklinasi), satelit LEO dapat dibedakan
+menjadi beberapa jenis. Satelit dengan inklinasi tinggi mendekati 90◦ (orbit polar) dirancang agar bisa meliput seluruh permukaan bumi, cocok untuk pemetaan dan pengamatan bumi. Sementara satelit dengan inklinasi rendah (ekuatorial) seperti LAPANA2 lebih sering melintas di atas wilayah tropis, sehingga lebih sering bisa ditangkap
+oleh stasiun bumi yang berada di sekitar khatulistiwa seperti di ITERA, Lampung [6]
+Satelit LAPAN-A2 dalam penelitian ini ditempatkan sebagai objek penelitian utama
+yang mewakili karakteristik wahana antariksa orbit LEO ekuatorial. Guna memperoleh pembaruan nilai TLE yang valid, sistem memanfaatkan fleksibilitas jaringan
+basis data open-source SatNOGS, di mana data citra spektrogram dapat disuplai dari stasiun bumi (Ground Station) manapun di seluruh dunia yang berhasil merekam
+lintasan satelit LEO saat melakukan pembaruan elemen orbit baru. Kendati pengumpulan data bersifat global lintas stasiun, Stasiun Bumi ITERA diposisikan sebagai
+Ground Station Utama yang performa akurasi datanya akan diuji secara spesifik dan
+dikomparasikan terhadap kontribusi data dari stasiun-stasiun bumi global lainnya.
+6
+
+Salah satu tantangan pengelolaan satelit LEO adalah orbitnya yang tidak selalu
+stabil. Karena masih ada sisa-sisa atmosfer di ketinggian tersebut, satelit mengalami
+hambatan kecil yang lama-kelamaan bisa menurunkan ketinggian orbitnya. Selain
+itu, bentuk bumi yang sedikit pipih di bagian kutub juga membuat bidang orbit pelanpelan bergeser. Hal inilah yang menjadi alasan mengapa data posisi satelit (TLE)
+perlu diperbarui secara berkala [6].
+2.1.1
+
+Satelit LAPAN-A2
+
+Gambar 2.2 Satelit LAPAN-A2 / ORARI.
+
+Objek penelitian yang digunakan dalam penelitian ini adalah satelit LAPAN-A2
+(NORAD ID: 40931), yaitu satelit mikro ekuatorial pertama Indonesia. LAPAN-A2
+dikembangkan berdasarkan pengalaman dari pendahulunya, LAPAN-A1, dan membawa muatan untuk pengamatan bumi, identifikasi kapal (AIS), serta komunikasi radio amatir [7]. Satelit ini diluncurkan pada September 2015 dan hingga saat ini masih
+aktif mengorbit dengan parameter teknis yang dapat dilihat pada Tabel 2.1.
+Alasan pemilihan LAPAN-A2 sebagai objek studi dalam penelitian ini ada beberapa. Pertama, inklinasinya yang mendekati ekuatorial membuat satelit ini secara
+konsisten melintas di atas wilayah Lampung dengan sudut elevasi yang cukup tinggi,
+sehingga sinyal yang diterima oleh antena di ITERA cukup kuat dan kurva Doppler
+7
+
+Tabel 2.1 Parameter teknis LAPAN-A2 yang relevan terhadap penelitian ini.
+
+Parameter
+NORAD ID
+Ketinggian orbit
+Inklinasi
+Periode orbit
+Frekuensi beacon
+Frekuensi lintasan di atas ITERA
+Elevasi puncak dari stasiun ITERA
+Pergeseran Doppler total
+
+Nilai
+40931
+≈ 650 km
+±7,97◦ (ekuatorial)
+≈ 97,3 menit
+435,880 MHz (pita UHF)
+rata-rata 5–7 kali per hari
+hingga > 70◦
+hingga ±3,5 kHz
+
+yang terekam bisa digunakan untuk proses pengolahan lebih lanjut. Kedua, frekuensi
+beacon-nya (435,880 MHz) berada di pita UHF yang kompatibel dengan perangkat
+keras stasiun SatNOGS di ITERA. Ketiga, data observasinya tersedia cukup banyak
+di basis data SatNOGS, sehingga memudahkan pengujian sistem [7].
+2.2
+
+Two-Line Element (TLE) dan Model Propagasi SGP4
+TLE (Two-Line Element) adalah format data standar yang digunakan untuk
+
+mendeskripsikan posisi dan pergerakan suatu objek di orbit bumi. Data ini berbentuk
+dua baris teks terstruktur yang berisi informasi seperti kemiringan orbit (inklinasi),
+eksentrisitas, dan kecepatan rata-rata satelit pada suatu waktu tertentu (epoch) [5].
+Sebagai contoh format TLE untuk LAPAN-A2 dapat dilihat pada Gambar 2.3.
+1 40931U 15052B 25001.50000000 .00001234 00000-0 15678-4
+0 9991
+2 40931 7.9805 47.2300 0010427 267.6600 92.2200
+14.76543210123456
+Gambar 2.3 Ilustrasi format TLE satelit LAPAN-A2.
+
+Baris pertama berisi nomor katalog NORAD, tanggal epoch, dan beberapa koefisien hambatan atmosfer. Baris kedua berisi parameter orbital utama seperti inklinasi,
+eksentrisitas, dan mean motion (kecepatan sudut rata-rata). Selain kedua baris tersebut, opsional baris judul (baris nol) juga kerap disertakan untuk mencantumkan nama
+resmi objek orbit dalam katalog, sehingga format TLE lengkap umumnya terdiri atas
+tiga baris secara keseluruhan.
+Untuk memperkirakan posisi satelit dari data TLE, digunakan model propagasi
+bernama SGP4 (Simplified General Perturbations 4). SGP4 adalah algoritma yang dirancang khusus untuk memprediksikan di mana sebuah satelit LEO akan berada pada
+waktu tertentu, dengan memperhitungkan efek hambatan atmosfer dan pengaruh ben-
+
+8
+
+tuk bumi yang tidak sempurna bulat [8]. SGP4 sudah menjadi standar yang digunakan
+secara luas di komunitas pengamat satelit maupun lembaga antariksa.
+Namun, TLE memiliki keterbatasan: semakin lama jarak antara waktu pengamatan dengan tanggal epoch TLE, semakin besar potensi kesalahannya. Menurut
+Vallado et al. [1], kesalahan prediksi posisi SGP4 untuk satelit LEO bisa mencapai
+10–20 km setelah 7 hari dan lebih dari 30 km setelah 14 hari. Hal inilah yang menjadi latar belakang perlunya pembaruan TLE secara berkala, terutama untuk keperluan
+yang membutuhkan presisi posisi yang tinggi.
+2.3
+
+Efek Doppler pada Komunikasi Satelit LEO
+Karena satelit LEO bergerak sangat cepat relatif terhadap stasiun bumi, sinyal
+
+radio yang dipancarkan satelit akan mengalami pergeseran frekuensi yang dikenal sebagai efek Doppler [9]. Ketika satelit mendekati stasiun bumi, frekuensi yang diterima
+akan lebih tinggi dari frekuensi aslinya; sebaliknya ketika satelit menjauh, frekuensi
+yang diterima menjadi lebih rendah. Pola perubahan frekuensi inilah yang membentuk kurva khas berbentuk huruf ’S’ terbalik pada spektrogram (waterfall display).
+Secara matematis, hubungan antara frekuensi yang diterima oleh stasiun bumi
+dengan kecepatan radial satelit dapat dinyatakan melalui persamaan Doppler relativistik yang disederhanakan [10]. Untuk kecepatan satelit LEO yang jauh lebih kecil
+dari kecepatan cahaya, pendekatan orde pertama sudah memberikan akurasi yang memadai. Persamaan yang digunakan adalah sebagai berikut:
+
+
+ρ̇
+fobs = ftx 1 −
+c
+
+(2.1)
+
+di mana fobs adalah frekuensi yang terukur di stasiun bumi, ftx adalah frekuensi
+asli yang dipancarkan satelit, ρ̇ adalah laju perubahan jarak antara satelit dan stasiun
+bumi (positif berarti menjauh, negatif berarti mendekat), dan c adalah kecepatan cahaya.
+Untuk LAPAN-A2 yang memancarkan sinyal pada frekuensi 435,880 MHz,
+pergeseran Doppler total yang terjadi saat satelit melintas di atas stasiun ITERA bisa
+mencapai ±3,5 kHz [11]. Kurva Doppler yang terekam dalam citra waterfall inilah
+yang menjadi data utama dalam penelitian ini, karena bentuk kurva tersebut menyimpan informasi tentang lintasan orbital satelit yang dapat digunakan untuk memperbaiki
+TLE. Dengan menganalisis perubahan frekuensi yang teramati dari waktu ke waktu
+selama satu lintasan, kecepatan radial satelit terhadap stasiun bumi dapat direkonstruksi dan digunakan sebagai kendala dalam proses pembaruan parameter orbital.
+
+9
+
+2.4
+
+Jaringan Stasiun Bumi Terbuka SatNOGS
+SatNOGS (Satellite Networked Open Ground Station) adalah jaringan stasiun
+
+bumi berbasis komunitas yang bersifat sumber terbuka (open-source). Jaringan ini
+mengoordinasikan lebih dari 650 stasiun bumi amatir aktif di seluruh dunia, termasuk
+satu stasiun yang berada di ITERA, Lampung [12]. Setiap stasiun dapat menjadwalkan dan melakukan pengamatan satelit LEO secara otomatis, dan hasilnya diunggah ke
+basis data publik SatNOGS yang bisa diakses melalui API resminya.
+Setiap sesi observasi SatNOGS menghasilkan dua jenis data yang digunakan
+dalam penelitian ini: pertama, citra waterfall dalam format PNG yang menggambarkan perubahan frekuensi sinyal terhadap waktu; dan kedua, berkas metadata dalam
+format JSON yang memuat informasi teknis observasi seperti waktu mulai, rentang
+frekuensi, dan durasi pengamatan. Kedua data ini menjadi masukan utama bagi sistem
+automasi yang dikembangkan dalam penelitian ini.
+Citra waterfall pada dasarnya adalah spektrogram: sumbu horizontal menunjukkan frekuensi, sumbu vertikal menunjukkan waktu (dari atas ke bawah), dan nilai
+setiap piksel menunjukkan kekuatan sinyal di frekuensi dan waktu tersebut. Ketika
+sinyal satelit berhasil ditangkap, akan terlihat garis atau jalur berwarna lebih terang
+yang melintasi gambar dari frekuensi tinggi ke rendah (atau sebaliknya), membentuk
+kurva Doppler yang khas. Kualitas citra ini bergantung pada seberapa kuat sinyal
+dibandingkan derau latar belakang, yang biasa dinyatakan sebagai SNR (Signal-toNoise Ratio) [13]. Semakin tinggi nilai SNR, semakin jelas kurva Doppler terlihat
+dan semakin mudah diekstraksi secara otomatis oleh sistem.
+Dalam penelitian ini, data yang digunakan dibatasi pada lintasan dengan sudut
+elevasi puncak Elmax ≥ 30◦ , karena pada elevasi yang terlalu rendah sinyal lebih
+mudah terhalang atmosfer dan kurva Doppler yang terekam hanya sebagian kecil sehingga tidak cukup untuk proses fitting TLE [6]. Selain itu, lintasan berelevasi rendah
+cenderung menghasilkan kurva Doppler yang terputus-putus atau terdistorsi oleh pemantulan sinyal dari permukaan bumi (multipath), sehingga kualitas data yang diperoleh tidak dapat diandalkan. Dengan menerapkan batasan elevasi minimum ini, sistem
+secara otomatis menyaring observasi berkualitas rendah dan hanya meneruskan data
+yang memiliki kurva Doppler lengkap dan jelas ke tahap pengolahan berikutnya.
+2.5
+
+Pengolahan Citra dengan OpenCV
+Untuk mengekstraksi kurva Doppler dari citra waterfall secara otomatis tan-
+
+pa campur tangan operator, digunakan teknik pengolahan citra digital dengan pusta-
+
+10
+
+ka OpenCV [14]. OpenCV (Open Source Computer Vision Library) adalah pustaka
+pemrosesan citra dan visi komputer sumber terbuka yang banyak digunakan dalam
+penelitian ilmiah maupun industri. Kemampuan OpenCV dalam melakukan konversi ruang warna, pemfilteran, binarisasi, dan analisis intensitas piksel secara efisien
+menjadikannya pilihan yang tepat untuk mengotomasi seluruh proses ekstraksi kurva
+Doppler dari citra waterfall LAPAN-A2.
+Tujuan dari tahap ini adalah mengubah citra waterfall (gambar PNG) menjadi
+sekumpulan pasangan data frekuensi dan waktu (fi , ti ) yang menjadi masukan bagi perangkat lunak STRF untuk proses fitting TLE. Proses ini dirancang agar dapat
+berjalan sepenuhnya secara otomatis tanpa campur tangan operator, sehingga sistem
+mampu memproses setiap sesi observasi baru yang masuk secara mandiri dan berkesinambungan. Keberhasilan tahap ekstraksi ini sangat bergantung pada kualitas citra
+waterfall dan seberapa jelas kurva Doppler terekam di dalamnya, yang pada gilirannya ditentukan oleh nilai SNR pada saat observasi dilakukan.
+Tahap pertama adalah konversi citra waterfall yang semula berwarna (RGB)
+menjadi citra skala abu-abu (grayscale). Hal ini dilakukan untuk menyederhanakan
+pengolahan karena informasi yang diperlukan, yakni kekuatan sinyal yang terwakili sepenuhnya oleh nilai kecerahan piksel, bukan warnanya [13]. Dengan menghilangkan dimensi warna yang tidak relevan, beban komputasi pada tahap selanjutnya
+berkurang secara signifikan dan algoritma deteksi sinyal dapat bekerja lebih efisien.
+Tahap kedua adalah penerapan filter Gaussian untuk mengurangi derau (noise)
+pada citra tanpa menghilangkan bentuk kurva Doppler yang sebenarnya. Filter ini bekerja dengan merata-ratakan nilai piksel di sekitarnya menggunakan bobot berbentuk
+kurva Gaussian, sehingga variasi intensitas yang tidak beraturan akibat derau bisa diminimalkan, sementara pola jalur sinyal yang lebih lebar tetap terjaga [13]. Pemilihan
+ukuran kernel filter menjadi parameter penting yang harus dikalibrasi sesuai dengan
+lebar tipikal jalur sinyal LAPAN-A2, karena kernel yang terlalu besar berisiko mengaburkan detail kurva Doppler, sedangkan kernel yang terlalu kecil tidak efektif dalam
+meredam derau.
+Tahap ketiga adalah thresholding untuk memisahkan piksel sinyal dari latar belakang. Citra yang sudah dihaluskan dikonversi menjadi citra hitam-putih (binary
+image) dengan cara menetapkan nilai ambang batas T , di mana piksel yang lebih terang dari T dianggap sebagai bagian dari sinyal satelit dan sisanya dianggap sebagai
+latar belakang [13]. Proses binarisasi ini dinyatakan sebagai:
+
+11
+
+
+255 jika I(x, y) ≥ T
+B(x, y) =
+0
+jika I(x, y) < T
+
+(2.2)
+
+di mana I(x, y) adalah nilai kecerahan piksel pada kolom x dan baris y dalam
+format grayscale 8-bit (kisaran 0–255), dan B(x, y) adalah hasil binarisasinya. Agar
+nilai T menyesuaikan diri secara adaptif terhadap distribusi intensitas tiap citra. sehingga robust terhadap variasi SNR antar sesi observasi yang menggunakan metode
+Otsu (Otsu’s method) [13], yang mencari nilai T ∗ yang meminimalkan varian intrakelas antara piksel sinyal dan piksel latar belakang:
+
+
+T ∗ = arg min ω0 (T ) σ02 (T ) + ω1 (T ) σ12 (T )
+T
+
+(2.3)
+
+di mana ω0 dan ω1 adalah fraksi piksel dari kelas latar belakang dan sinyal,
+sedangkan σ02 dan σ12 adalah varian intensitasnya masing-masing.
+Tahap keempat adalah ekstraksi posisi kurva Doppler menggunakan metode
+intensity centroid (pusat massa intensitas). Untuk setiap baris piksel y yang mewakili
+satu titik waktu, posisi sinyal dalam arah frekuensi ditentukan dengan persamaan [13]:
+X
+xc (y) =
+
+x · B(x, y)
+
+x
+
+X
+
+(2.4)
+B(x, y)
+
+x
+
+di mana xc (y) adalah posisi piksel horizontal hasil perhitungan (bernilai desimal). Metode ini lebih andal dibandingkan sekadar mengambil piksel paling terang
+karena mempertimbangkan seluruh distribusi intensitas di sekitar puncak sinyal. Untuk mengurangi pengaruh derau residual pasca-thresholding, ekstraksi centroid hanya
+dilakukan pada baris piksel yang memenuhi batas minimum jumlah piksel sinyal:
+S(y) =
+
+X
+
+B(x, y) ≥ Nmin · 255
+
+(2.5)
+
+x
+
+di mana Nmin adalah batas minimum jumlah piksel sinyal yang dikalibrasi dari
+data observasi awal. Baris dengan S(y) < Nmin · 255 dianggap memiliki SNR terlalu
+rendah dan dilewati.
+Tahap kelima adalah konversi koordinat piksel ke satuan fisik. Posisi piksel
+hasil centroid yang masih dalam satuan piksel dikonversi ke nilai frekuensi (Hz) dan
+waktu (UTC) menggunakan informasi kalibrasi dari metadata JSON yang disertakan
+bersama setiap observasi SatNOGS. Konversi ini dilakukan secara linier:
+12
+
+xc,i
+· ∆f
+W
+yi
+· ∆t
+ti = tstart +
+H
+
+fi = fmin +
+
+(2.6)
+(2.7)
+
+di mana fmin adalah frekuensi pada tepi kiri citra (Hz); ∆f = fmax − fmin
+adalah lebar rentang frekuensi total; W adalah lebar citra dalam piksel; tstart adalah
+waktu mulai observasi (UTC); ∆t adalah durasi total observasi (detik); dan H adalah
+tinggi citra dalam piksel.
+Hasil akhir dari proses ini adalah berkas teks berisi pasangan nilai (fi , ti ), yaitu
+frekuensi observasi beserta waktu pengamatannya untuk setiap titik sepanjang kurva
+Doppler. Berkas inilah yang selanjutnya dimasukkan ke STRF untuk proses pembaruan TLE. Penjelasan lebih lengkap mengenai parameter yang digunakan dalam setiap
+tahap akan diuraikan pada Bab III (Metode Penelitian) setelah kalibrasi dilakukan
+pada data observasi LAPAN-A2.
+2.6
+
+Penentuan Orbit dengan Ekosistem STRF
+STRF (Satellite Tracking with Radio Frequency) adalah perangkat lunak sum-
+
+ber terbuka berbasis command-line yang dikembangkan oleh C. Bassa untuk menganalisis data frekuensi radio dari satelit LEO dan menggunakannya untuk memperbaiki
+atau memperbarui TLE [15]. STRF tersedia secara bebas dan sudah digunakan di berbagai penelitian pelacakan satelit amatir di seluruh dunia. Ketersediaannya sebagai
+perangkat lunak open-source menjadikannya pilihan yang tepat untuk diintegrasikan
+ke dalam sistem automasi berbasis Python yang dikembangkan dalam penelitian ini,
+karena seluruh proses pemanggilan dan pemrosesan hasilnya dapat dilakukan secara
+terprogram.
+Komponen utama dalam STRF yang digunakan dalam penelitian ini adalah
+rffit. Cara kerjanya secara umum adalah sebagai berikut: STRF menerima data
+kurva Doppler hasil pengolahan citra (berkas (fi , ti )) beserta TLE awal satelit yang
+bersangkutan. Kemudian, STRF mensimulasikan kurva Doppler yang seharusnya terjadi berdasarkan TLE tersebut, dan membandingkannya dengan kurva yang benarbenar teramati. Parameter orbital dalam TLE lalu disesuaikan secara bertahap sampai
+kurva simulasi secocok mungkin dengan data observasi [15].
+Ukuran seberapa cocok hasil fitting tersebut dinyatakan dalam bentuk RMSE
+(Root Mean Square Error), yaitu rata-rata dari selisih antara frekuensi yang dipredik-
+
+13
+
+si model dengan frekuensi yang sebenarnya teramati. Nilai RMSE yang lebih kecil
+berarti TLE hasil pembaruan lebih akurat dalam merepresentasikan orbit satelit yang
+sesungguhnya. Nilai RMSE ini juga akan menjadi salah satu tolok ukur keberhasilan
+sistem dalam penelitian ini.
+Hasil akhir dari proses rffit adalah TLE yang telah diperbarui (updated
+TLE), yang kemudian disimpan dalam format standar dan siap digunakan untuk keperluan prediksi lintasan berikutnya ataupun analisis lebih lanjut. TLE yang dihasilkan
+mencerminkan kondisi orbit satelit pada saat observasi dilakukan, sehingga akurasinya lebih tinggi dibandingkan TLE awal yang telah melewati selang waktu sejak
+tanggal epoch-nya. Selain TLE yang terbarui, utilitas rffit juga menghasilkan nilai
+RMSE akhir yang menjadi indikator kuantitatif seberapa baik kualitas pembaruan orbit yang telah dilakukan, dan nilai ini akan menjadi tolok ukur utama evaluasi kinerja
+sistem dalam penelitian ini.
+2.6.1
+
+Mekanisme Fitting Orbit pada Utilitas rffit
+Utilitas rffit dalam ekosistem STRF bekerja dengan prinsip pencocokan ku-
+
+rva (curve fitting): parameter orbital dalam TLE disesuaikan secara iteratif hingga kurva frekuensi Doppler yang disimulasikan oleh model secocok mungkin dengan kurva
+yang benar-benar teramati oleh stasiun bumi [15]. Pendekatan ini memanfaatkan fakta
+bahwa bentuk kurva Doppler sangat sensitif terhadap parameter orbital seperti gerak
+rata-rata dan anomali rata-rata, sehingga penyesuaian kecil pada parameter tersebut
+dapat terdeteksi dari pergeseran posisi kurva yang teramati. Mekanisme ini berlangsung melalui tiga tahap yang saling berkesinambungan, mulai dari pembangunan kurva prediksi, proses optimasi iteratif, hingga penyimpanan TLE terbarui beserta nilai
+RMSE-nya.
+Pada tahap pertama, rffit menerima dua masukan: TLE awal satelit (diambil dari Space-Track.org) dan berkas data kurva Doppler hasil observasi stasiun
+bumi berupa pasangan frekuensi dan waktu (fi , ti ). Dari TLE awal tersebut, rffit
+menyebarkan (propagate) posisi dan kecepatan satelit pada setiap waktu ti menggunakan model SGP4, kemudian menghitung kecepatan radial satelit terhadap stasiun
+bumi (ρ̇), yaitu seberapa cepat jarak antara keduanya berubah pada setiap saat. Nilai ρ̇
+inilah yang menentukan seberapa besar pergeseran Doppler yang seharusnya terjadi,
+sehingga dapat dibangun kurva Doppler prediksi fpred menggunakan persamaan 2.8
+[10]:
+
+fpred (ti ) = ftx
+14
+
+ρ̇(ti )
+1−
+c
+
+
+(2.8)
+
+di mana ftx adalah frekuensi transmisi beacon satelit dan c adalah kecepatan
+cahaya.
+Pada tahap kedua, kurva prediksi fpred yang dihasilkan dari TLE awal umumnya belum cocok sempurna dengan kurva observasi fi , karena TLE awal sudah mengalami degradasi akurasi sejak tanggal epoch-nya. rffit kemudian menyesuaikan
+enam parameter orbital dalam TLE secara otomatis, yaitu gerak rata-rata (n), eksentrisitas (e), inklinasi (i), RAAN (Ω), argumen perigee (ω), dan anomali rata-rata
+(M0 ), dengan meminimalkan fungsi objektif χ2 terhadap vektor parameter orbital
+α = (n, e, i, Ω, ω, M0 ) [15]:
+2
+
+χ (α) =
+
+N
+X
+
+(fi − fpred,i (α))2
+
+(2.9)
+
+i=1
+
+di mana setiap fpred,i (α) dihitung menggunakan propagator SGP4 pada epoch
+ti . Pada setiap iterasi, rffit menghitung selisih antara fpred dan fi , lalu menggunakan informasi tersebut untuk menentukan ke arah mana dan seberapa jauh setiap
+parameter orbital perlu digeser. Secara fisik, kurva Doppler yang teramati menyimpan
+informasi tentang kecepatan radial satelit (ρ̇) sepanjang lintasan, yang menjadi kendala (constraint) bagi proses optimasi: parameter orbital hanya boleh berubah sejauh
+perubahan tersebut menghasilkan profil ρ̇ yang konsisten dengan kurva Doppler yang
+benar-benar teramati [5]. Iterasi terus berlanjut hingga nilai χ2 tidak lagi berkurang
+secara berarti, menandakan bahwa solusi sudah konvergen.
+Pada tahap ketiga, setelah iterasi selesai, rffit mengeluarkan TLE baru yang
+parameter orbitalnya sudah disesuaikan dan disimpan dalam format standar dua baris
+TLE. Kualitas hasil fitting dinyatakan dalam nilai RMSE (dalam satuan Hz atau kHz),
+yaitu rata-rata selisih antara kurva Doppler prediksi dan observasi setelah proses selesai [15]:
+v
+u
+N
+u1 X
+RMSE = t
+(fi − fpred,i )2
+N
+
+(2.10)
+
+i=1
+
+di mana N adalah jumlah titik data yang valid. Nilai RMSE yang lebih kecil
+setelah fitting dibandingkan sebelumnya menunjukkan bahwa TLE baru lebih akurat
+dalam menggambarkan orbit aktual satelit pada saat observasi dilakukan. Nilai RMSE ini menjadi salah satu metrik utama evaluasi kinerja sistem dalam penelitian ini,
+sebagaimana diuraikan pada Bab III.
+
+15
+
+BAB III
+METODE PENELITIAN
+3.1
+
+Waktu dan Tempat Penelitian
+Penelitian ini dilaksanakan mulai bulan Juni hingga Agustus 2026. Objek uta-
+
+ma dalam penelitian ini adalah satelit ekuatorial LAPAN-A2 (NORAD ID 40931),
+yang orbitnya dipelajari melalui analisis data observasi radio dari jaringan stasiun
+bumi global. Proses perancangan sistem pipeline, penulisan skrip automasi, dan pengujian komputasi dilakukan di Laboratorium Komputasi Sains Atmosfer dan Keplanetan, Institut Teknologi Sumatera (ITERA).
+Data observasi primer diperoleh secara fleksibel dari basis data publik jaringan
+SatNOGS yang berasal dari stasiun bumi di berbagai penjuru dunia, bergantung pada
+ketersediaan rekaman data saat LAPAN-A2 melintas. Dalam kerangka analisis komparatif penelitian ini, Stasiun Bumi ITERA ditetapkan sebagai stasiun pembanding
+utama (ground station referensi), yang hasil TLE-nya akan dievaluasi dan dibandingkan terhadap TLE yang dihasilkan dari kumpulan ground station global lainnya dalam ekosistem SatNOGS, serta divalidasi silang terhadap TLE resmi yang dirilis oleh
+USSPACECOM melalui Space-Track.org.
+3.2
+
+Perangkat Lunak (Software) dan Lingkungan Penelitian
+Seluruh tahapan penelitian ini dijalankan dalam lingkungan sistem operasi Ubun-
+
+tu 22.04 LTS yang dipilih karena kompatibilitasnya dengan seluruh komponen perangkat lunak yang digunakan. Skrip automasi ditulis dalam Python 3.10 dan bash
+script untuk mengakses SatNOGS API, mengunduh dan mengolah data observasi, serta memanggil utilitas eksternal secara terprogram. Pengolahan citra waterfall untuk
+mengekstraksi kurva Doppler dilakukan menggunakan pustaka OpenCV [14], yang
+didukung oleh pustaka NumPy dan SciPy untuk komputasi numerik dan konversi koordinat. Proses pembaruan TLE berdasarkan data kurva Doppler yang telah diekstraksi dilakukan menggunakan utilitas rffit dari perangkat lunak STRF (Satellite
+Tracking with Radio Frequency) [15]. Akses ke data observasi dilakukan melalui SatNOGS API berbasis HTTP dengan parameter NORAD ID = 40931 [12].
+3.3
+
+Parameter Teknis LAPAN-A2
+Seluruh parameter teknis dalam penelitian ini ditetapkan secara spesifik sesu-
+
+ai karakteristik LAPAN-A2 dan kondisi stasiun bumi ITERA. Parameter ini bersifat
+16
+
+tetap selama penelitian dan dirangkum pada Tabel 3.1.
+Tabel 3.1 Parameter tetap yang digunakan dalam sistem automasi penelitian.
+
+3.4
+
+Parameter
+
+Nilai
+
+Keterangan
+
+NORAD ID target
+
+40931
+
+Identifikasi LAPAN-A2
+
+Frekuensi beacon (ftx )
+
+435,880 MHz
+
+Frekuensi transmisi UHF
+
+Pergeseran Doppler maks.
+
+±3,5 kHz
+
+Pada lintasan mendekati zenit
+
+Batas elevasi minimum
+
+30◦
+
+Filter kualitas lintasan
+
+Alur Penelitian
+Sistem yang dikembangkan dalam penelitian ini beroperasi pada dua lapisan
+
+yang saling melengkapi: lapisan perangkat lunak (software pipeline) yang mengotomasi seluruh proses dari pengambilan data hingga penyimpanan TLE, dan lapisan
+alur penelitian akademis yang menggambarkan tahapan analisis dan evaluasi hasil secara menyeluruh. Kedua alur ini ditunjukkan secara terpisah pada Gambar 3.1 dan
+Gambar 3.2.
+
+17
+
+Mulai
+Cek API SatNOGS (NORAD 40931)
+
+Data baru
+
+Tidak
+
+tersedia?
+
+Ya
+
+Unduh PNG & JSON
+
+Elmax ≥ 30◦ ?
+
+Tidak
+
+Ya
+
+Ekstraksi Kurva Doppler (OpenCV)
+
+Kurva valid?
+
+Tidak
+
+Ya
+
+Konversi piksel → (fi , ti )
+STRF rffit: Optimasi TLE
+Simpan TLE baru + nilai RMSE
+Selesai
+Gambar 3.1 Diagram alir workflow sistem pipeline perangkat lunak automasi.
+
+18
+
+Mulai
+Studi Literatur & Persiapan TLE Referensi
+Akuisisi Data Observasi SatNOGS
+(Stasiun ITERA & Stasiun Global)
+Pemrosesan Citra Waterfall
+(Ekstraksi Kurva Doppler)
+Konversi Koordinat Piksel
+→ Frekuensi & Waktu
+Fitting TLE dengan Utilitas rffit STRF
+Perbandingan RMSE:
+Stasiun ITERA vs. Stasiun Global SatNOGS
+Validasi Silang terhadap TLE Resmi USSPACECOM
+Analisis Hasil & Penarikan Kesimpulan
+Selesai
+Gambar 3.2 Diagram alir workflow alur penelitian dan tahapan analisis akademis.
+
+Berikut adalah penjelasan teknis dari setiap tahap dalam sistem automasi yang
+dikembangkan, sesuai dengan alur pada Gambar 3.1 dan Gambar 3.2.
+3.4.1
+
+Pengambilan Data Observasi dari SatNOGS API
+Skrip Python secara berkala mengirimkan permintaan ke SatNOGS API de-
+
+ngan parameter NORAD ID = 40931 untuk memeriksa ketersediaan data observasi
+LAPAN-A2 terbaru dari seluruh stasiun yang tergabung dalam jaringan SatNOGS,
+termasuk Stasiun Bumi ITERA. Setiap sesi observasi yang berhasil diunduh terdiri
+dari dua berkas: citra waterfall (PNG) dan metadata observasi (JSON). Citra waterfall adalah spektrogram dua dimensi di mana sumbu horizontal menyatakan frekuensi di
+sekitar 435,880 MHz, sumbu vertikal menyatakan waktu pengamatan, dan kecerahan setiap piksel menunjukkan kekuatan sinyal. Apabila sinyal LAPAN-A2 berhasil
+19
+
+ditangkap, akan terlihat jalur berwarna lebih terang yang membentuk kurva Doppler
+khas dari frekuensi tinggi ke rendah (atau sebaliknya) sepanjang sumbu waktu. Metadata JSON memuat informasi waktu mulai observasi (tstart ), rentang frekuensi (fmin ,
+fmax ), dan durasi total (∆t) yang digunakan sebagai kunci kalibrasi pada tahap konversi koordinat.
+Setelah data diunduh, sistem memeriksa apakah sudut elevasi puncak lintasan (Elmax ) memenuhi syarat minimum 30◦ . Batasan ini penting karena pada elevasi
+rendah sinyal LAPAN-A2 melewati jalur atmosfer yang lebih panjang sehingga kualitas kurva Doppler yang terbentuk tidak cukup jelas untuk diekstraksi secara otomatis
+[6]. Dengan menerapkan filter elevasi ini, sistem dapat memastikan bahwa hanya
+observasi dengan kualitas sinyal yang memadai yang diproses lebih lanjut, sehingga
+keandalan dan akurasi TLE yang dihasilkan dapat dipertahankan secara konsisten.
+3.4.2
+
+Ekstraksi Kurva Doppler dengan OpenCV
+Tahap ini mengolah citra waterfall PNG menjadi sekumpulan koordinat pik-
+
+sel yang merepresentasikan posisi kurva Doppler LAPAN-A2 menggunakan OpenCV
+[14], sebagaimana diilustrasikan pada Gambar 3.3. Seluruh proses berlangsung secara otomatis sebagai bagian dari pipeline Python, tanpa memerlukan intervensi manual
+dari operator dalam tahap apapun. Hasil akhir tahap ini adalah himpunan koordinat
+piksel {(y, xc (y))} yang selanjutnya dikonversi ke satuan fisik frekuensi dan waktu
+pada tahap berikutnya.
+
+Gambar 3.3 Ilustrasi tahapan pengolahan citra waterfall: (a) citra asli, (b) setelah grayscale, (c) setelah
+Gaussian filter, (d) setelah thresholding, (e) kurva centroid yang diekstraksi.
+
+Langkah pertama adalah mengubah citra waterfall berwarna (RGB) menjadi citra skala abu-abu menggunakan fungsi cv2.cvtColor() dengan parameter
+COLOR_BGR2GRAY. Konversi ini menyederhanakan pengolahan selanjutnya karena
+kekuatan sinyal cukup diwakili oleh satu nilai kecerahan per piksel [13]. Selain itu,
+dengan mengeliminasi dimensi warna yang tidak membawa informasi tambahan bagi
+20
+
+proses deteksi sinyal, kompleksitas komputasi pada tahap berikutnya dapat dikurangi
+secara efisien.
+Selanjutnya, filter Gaussian diterapkan untuk mengurangi derau yang tidak beraturan pada citra tanpa menghilangkan bentuk umum kurva Doppler, melalui fungsi
+cv2.GaussianBlur(). Ukuran kernel filter dikalibrasi berdasarkan lebar tipikal
+jalur sinyal LAPAN-A2 pada data observasi awal. Pemrosesan dilakukan dengan memindai seluruh kolom frekuensi pada setiap baris waktu y secara berurutan, sehingga
+estimasi posisi sinyal pada tiap titik waktu bersifat independen dan tidak terpengaruh
+oleh derau dari baris waktu lain.
+Citra yang sudah dihaluskan kemudian dibinarisasi menggunakan metode thresholding Otsu (Otsu’s method) [13], mengacu pada Persamaan 2.2 dan Persamaan 2.3.
+Metode Otsu secara otomatis menentukan nilai ambang batas T ∗ yang meminimalkan varian intra-kelas antara piksel sinyal dan piksel latar belakang, sehingga nilai
+ambang batas menyesuaikan diri secara adaptif terhadap distribusi intensitas tiap citra dan robust terhadap variasi SNR antar sesi observasi. Implementasinya menggunakan perintah cv2.threshold(img, 0, 255, cv2.THRESH_BINARY +
+cv2.THRESH_OTSU).
+Pada tahap terakhir, posisi horizontal kurva Doppler pada setiap baris piksel y
+ditentukan menggunakan metode intensity centroid (pusat massa intensitas), mengacu
+pada Persamaan 2.4 Bab II. Metode ini lebih andal dibandingkan sekadar mencari
+piksel paling terang karena mempertimbangkan seluruh distribusi intensitas di sekitar
+puncak sinyal [13]. Untuk mengurangi pengaruh derau residual pasca-thresholding,
+ekstraksi centroid hanya dilakukan pada baris piksel yang memiliki jumlah piksel
+sinyal di atas batas minimum Nmin sebagaimana dinyatakan pada Persamaan 2.5,
+yang dikalibrasi dari sampel data observasi awal LAPAN-A2.
+Setelah seluruh baris diproses, diperoleh kurva {(y, xc (y))} yang merepresentasikan kurva Doppler dalam koordinat piksel. Jika kurva tidak terbentuk dengan baik. Misalnya karena SNR terlalu rendah, atau jalur sinyal terputus-putus, data tersebut
+dinyatakan tidak valid dan sistem kembali menunggu data observasi berikutnya.
+3.4.3
+
+Konversi Koordinat Piksel ke Frekuensi dan Waktu
+Koordinat piksel kurva Doppler yang dihasilkan pada tahap sebelumnya dikon-
+
+versi ke satuan frekuensi (Hz) dan waktu (UTC) menggunakan informasi dari metadata JSON observasi, mengacu pada Persamaan 2.6 dan Persamaan 2.7. Konversi
+ini bersifat linier dan bergantung sepenuhnya pada metadata JSON, sehingga tidak
+memerlukan kalibrasi tambahan selama format data SatNOGS tidak berubah. Untuk
+21
+
+observasi LAPAN-A2, rentang frekuensi ∆f yang umum digunakan adalah sekitar
+100 kHz yang berpusat di 435.880 MHz, lebih lebar dari pergeseran Doppler maksimum ±3.5 kHz, sehingga seluruh kurva dipastikan terekam dalam satu citra [11].
+Hasil konversi berupa deretan pasangan (fi , ti ) disimpan dalam berkas teks terstruktur
+yang siap dimasukkan ke STRF.
+3.4.4 Fitting TLE dengan Utilitas rffit STRF
+Berkas (fi , ti ) hasil konversi dimasukkan ke utilitas rffit bersama TLE awal
+LAPAN-A2 yang diambil dari Space-Track.org. STRF mensimulasikan frekuensi
+yang seharusnya diterima stasiun pengamat berdasarkan TLE tersebut menggunakan
+persamaan Doppler dan propagator SGP4, sebagaimana dinyatakan pada Persamaan 2.1 [10]. Parameter orbital dalam TLE kemudian disesuaikan secara iteratif dengan meminimalkan fungsi objektif χ2 terhadap vektor parameter orbital α, mengacu
+pada Persamaan 2.9, hingga konvergen ke nilai minimum yang menghasilkan TLE
+terkoreksi. Kualitas kesesuaian fitting diukur menggunakan RMSE dalam satuan kHz
+sebagaimana dinyatakan pada Persamaan 2.10 [15]; nilai RMSE yang lebih kecil setelah fitting menunjukkan bahwa TLE baru lebih akurat dalam menggambarkan orbit
+LAPAN-A2 yang sesungguhnya.
+Hasil akhir dari tahap ini adalah TLE LAPAN-A2 yang sudah diperbarui, disimpan dalam format standar dua baris TLE beserta nilai RMSE dan waktu epoch
+dari sesi observasi yang digunakan. TLE yang dihasilkan mencerminkan kondisi orbit aktual LAPAN-A2 pada saat observasi berlangsung, sehingga tingkat akurasinya
+lebih tinggi dibandingkan TLE awal yang dijadikan titik awal proses fitting. Nilai
+RMSE yang ikut tersimpan berfungsi sebagai indikator kuantitatif kualitas pembaruan dan menjadi data utama yang akan dibandingkan antar sumber observasi pada
+tahap analisis data berikutnya.
+3.5
+
+Analisis Data
+Analisis dalam penelitian ini difokuskan sepenuhnya pada pengujian kualitas
+
+dan akurasi TLE hasil automasi dari berbagai sumber data observasi. Evaluasi dilakukan melalui dua tahapan komparatif yang saling melengkapi, dengan RMSE sebagai
+metrik kuantitatif utama yang digunakan pada setiap tahap perbandingan. Kedua tahapan ini dirancang secara sistematis untuk menjawab rumusan masalah penelitian
+mengenai tingkat akurasi TLE yang dapat dihasilkan oleh sistem, serta posisi kualitas
+Stasiun Bumi ITERA dalam ekosistem jaringan pemantauan satelit global.
+
+22
+
+Tahap pertama adalah perbandingan nilai RMSE antar sumber data stasiun bumi.
+TLE yang dihasilkan dari data observasi Stasiun Bumi ITERA dibandingkan secara
+langsung dengan TLE yang dihasilkan dari data observasi jaringan ground station global SatNOGS. Perbandingan ini bertujuan untuk mengukur seberapa besar kontribusi
+dan kualitas data Stasiun Bumi ITERA relatif terhadap jaringan global, yang tercermin dari besarnya penurunan nilai RMSE pada masing-masing sumber data setelah
+proses fitting.
+Tahap kedua adalah validasi silang terhadap TLE resmi USSPACECOM. TLE
+hasil automasi baik dari Stasiun ITERA maupun dari gabungan stasiun global, divalidasi dengan membandingkannya terhadap TLE resmi yang dirilis oleh USSPACECOM melalui Space-Track.org sebagai basis referensi kebenaran (ground truth).
+Validasi ini mengukur seberapa dekat TLE hasil automasi mendekati estimasi orbit
+resmi, sehingga dapat dinilai apakah sistem yang dikembangkan mampu menghasilkan TLE dengan tingkat akurasi yang setara atau mendekati standar resmi.
+Hasil analisis ini diharapkan dapat menjawab rumusan masalah mengenai seberapa besar penurunan nilai residu antara TLE awal dan TLE terkoreksi, serta menunjukkan posisi kualitas Stasiun Bumi ITERA dalam ekosistem jaringan pemantauan
+satelit global.
+Dalam penelitian ini diasumsikan bahwa algoritma optimasi dalam utilitas rffit
+STRF bekerja secara benar dan bahwa model propagasi SGP4 yang digunakan sudah
+memadai untuk tujuan koreksi TLE. Analisis mendalam terhadap keterbatasan internal model STRF berada di luar ruang lingkup penelitian ini. Apabila nilai RMSE hasil
+fitting masih relatif besar, hal tersebut dapat didiskusikan dalam konteks faktor-faktor
+eksternal yang memengaruhi kualitas fitting, seperti kualitas sinyal observasi, jumlah
+titik data kurva Doppler, atau rentang lintasan yang terekam bukan sebagai indikasi
+kegagalan algoritma STRF itu sendiri.
+3.6
+
+Jadwal Kegiatan
+Rencana pelaksanaan penelitian ini dimulai dari awal Mei 2026 hingga Sep-
+
+tember 2026 sebagaimana ditunjukkan pada Tabel 3.2. Studi literatur dan penyusunan
+draft proposal dilaksanakan pada bulan Mei, dengan Seminar Proposal dijadwalkan
+pada 4 Juni 2026. Kegiatan persiapan alat, pengambilan data, pengolahan hasil, dan
+penulisan laporan dilaksanakan setelah Seminar Proposal, dengan Sidang Akhir direncanakan pada September 2026.
+
+23
+
+Tabel 3.2 Jadwal Kegiatan Penelitian
+
+Mei
+
+Juni
+
+No Kegiatan Penelitian
+
+Juli
+
+Agustus Sept
+
+Minggu
+1 2 3 4 1 2 3 4 1 2 3 4 1 2 3 4
+
+1
+
+Studi Literatur
+
+2
+
+Penyusunan Draft Proposal
+
+3
+
+Seminar Proposal
+
+4
+
+Persiapan Alat Penelitian
+
+5
+
+Pengambilan Data
+
+6
+
+Pengolahan dan Analisis Hasil
+
+7
+
+Penulisan Laporan Tugas Akhir
+
+8
+
+Seminar Hasil
+
+9
+
+Revisi
+
+10 Sidang Akhir
+
+24
+
+1
+
+DAFTAR PUSTAKA
+[1]
+
+D. A. Vallado, P. Crawford, R. Hujsak, dan T. S. Kelso, “Revisiting spacetrack
+report #3: Rev 2”, di dalam AIAA/AAS Astrodynamics Specialist Conference
+and Exhibit, Keystone, Colorado: American Institute of Aeronautics dan Astronautics, 2006.
+
+[2]
+
+D. L. Oltrogge dan L. Ramrath, “Parametric characterization of SGP4 theory
+and TLE positional accuracy”, di dalam Advanced Maui Optical and Space
+Surveillance (AMOS) Technologies Conference, Maui, Hawaii, 2014.
+
+[3]
+
+C. Levit dan W. Marshall, “Improved orbit predictions using two-line elements”, Advances in Space Research, vol. 47, no. 7, hlmn. 1107–1115, 2011.
+
+[4]
+
+K. Sośnica, R. Zajdel, G. Bury, D. Strugarek, M. Drożdżewski, dan K. Kazmierski, “Study of the two-line element accuracy by 1U CubeSat with a GPS
+receiver”, Sensors, vol. 22, no. 8, hlmn. 2902, 2022.
+
+[5]
+
+D. A. Vallado, Fundamentals of Astrodynamics and Applications. Microcosm
+Press, 2013, vol. 4.
+
+[6]
+
+O. Montenbruck dan E. Gill, Satellite Orbits: Models, Methods and Applications. Springer Science & Business Media, 2012.
+
+[7]
+
+S. Hardhienata, M. Mukhayadi, W. Hasbi, dan R. Hakim, “Development of
+LAPAN-A2 microsatellite based on LAPAN-TUBSAT heritage”, di dalam Proceedings of the International Symposium on Sustainable Aviation and Aerospace Development, 2010.
+
+[8]
+
+F. R. Hoots dan R. L. Roehrich, “Models for propagation of NORAD element
+sets (Spacetrack report no. 3)”, Aerospace Defense Command Peterson AFB
+CO, tech. rep., 1980.
+
+[9]
+
+D. Roddy, Satellite Communications, 4th. McGraw-Hill Education, 2006.
+
+[10]
+
+G. Maral, M. Bousquet, dan Z. Sun, Satellite Communications Systems: Systems, Techniques and Technology. John Wiley & Sons, 2020.
+
+[11]
+
+N. Hongyim dan S. Mitatha, “Building automatic antenna tracking system for
+low earth orbit (LEO) satellite communications”, di dalam 2016 International
+Conference on Electronics, Information, and Communication (ICEIC), IEEE,
+2016, hlmn. 1–4.
+
+[12]
+
+P. Pierros dan P. Papadeas, “SatNOGS: A global open source network of satellite ground stations”, Libre Space Foundation, tech. rep., 2019.
+25
+
+[13]
+
+R. C. Gonzalez dan R. E. Woods, Digital Image Processing, 4th. Pearson, 2017.
+
+[14]
+
+G. Bradski dan A. Kaehler, Learning OpenCV: Computer Vision with the OpenCV Library. O’Reilly Media, 2008.
+
+[15]
+
+C. Bassa, STRF: Satellite tracking with radio frequency, GitHub Repository,
+https://github.com/cbassa/strf, 2020.
+
+26
+
+

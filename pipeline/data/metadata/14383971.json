@@ -1,0 +1,78 @@
+{
+  "id": 14383971,
+  "start": "2026-06-26T12:57:59Z",
+  "end": "2026-06-26T13:02:46Z",
+  "ground_station": 2178,
+  "transmitter": "hFDkQfVWz74gCnkXRygZq5",
+  "norad_cat_id": 43689,
+  "payload": "https://network-satnogs.freetls.fastly.net/media/data_obs/2026/6/26/12/14383971/satnogs_14383971_2026-06-26T12-57-59.ogg",
+  "waterfall": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383971/waterfall_14383971_2026-06-26T12-57-59.png",
+  "demoddata": [
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383971/data_14383971_2026-06-26T12-58-27"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383971/data_14383971_2026-06-26T13-00-20"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383971/data_14383971_2026-06-26T12-59-03"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383971/data_14383971_2026-06-26T12-59-47"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383971/data_14383971_2026-06-26T12-59-42"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383971/data_14383971_2026-06-26T13-00-56"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383971/data_14383971_2026-06-26T13-00-53"
+    }
+  ],
+  "station_name": "DIYSATELLITE",
+  "station_lat": -34.747,
+  "station_lng": -58.333,
+  "station_alt": 30,
+  "vetted_status": "good",
+  "vetted_user": null,
+  "vetted_datetime": null,
+  "archived": false,
+  "archive_url": null,
+  "client_version": "2.1.2",
+  "client_metadata": "{\"radio\": {\"name\": \"gr-satnogs\", \"version\": null, \"parameters\": {\"mode\": \"BPSK PMT-A3\", \"soapy-rx-device\": \"driver=rtlsdr,rtl=0,agc=false\", \"samp-rate-rx\": \"1.024e+06\", \"rx-freq\": \"465987500\", \"file-path\": \"/tmp/.satnogs/data/receiving_satnogs_14383971_2026-06-26T12-57-59.out\", \"waterfall-file-path\": \"/tmp/.satnogs/data/receiving_waterfall_14383971_2026-06-26T12-57-59.dat\", \"decoded-data-file-path\": \"/tmp/.satnogs/data/data_14383971\", \"doppler-correction-per-sec\": \"1\", \"lo-offset\": null, \"ppm\": \"59\", \"rigctl-host\": \"rigctld\", \"rigctl-port\": \"4532\", \"gain-mode\": \"Overall\", \"gain\": \"20.7\", \"antenna\": \"RX\", \"dev-args\": null, \"stream-args\": null, \"tune-args\": null, \"other-settings\": null, \"dc-removal\": null, \"bb-freq\": null, \"bw\": null, \"enable-iq-dump\": \"0\", \"iq-file-path\": null, \"udp-dump-host\": null, \"udp-dump-port\": 57356, \"baud\": \"800\"}}, \"latitude\": -34.747, \"longitude\": -58.333, \"elevation\": 30.0, \"frequency\": 465987500}",
+  "status": "good",
+  "waterfall_status": "unknown",
+  "waterfall_status_user": null,
+  "waterfall_status_datetime": null,
+  "rise_azimuth": 11.0,
+  "set_azimuth": 196.0,
+  "max_altitude": 87.0,
+  "transmitter_uuid": "hFDkQfVWz74gCnkXRygZq5",
+  "transmitter_description": "ARGOS-3 A-DCS",
+  "transmitter_type": "Transmitter",
+  "transmitter_uplink_low": null,
+  "transmitter_uplink_high": null,
+  "transmitter_uplink_drift": null,
+  "transmitter_downlink_low": 465987500,
+  "transmitter_downlink_high": null,
+  "transmitter_downlink_drift": null,
+  "transmitter_mode": "BPSK PMT-A3",
+  "transmitter_invert": false,
+  "transmitter_baud": 800.0,
+  "transmitter_updated": "2020-06-19T23:56:29.805850Z",
+  "transmitter_status": "active",
+  "tle0": "0 METOP-C",
+  "tle1": "1 43689U 18087A   26177.14801507  .00000080  00000-0  56480-4 0  9998",
+  "tle2": "2 43689  98.6640 236.5877 0002031 118.0932 242.0451 14.21514306396107",
+  "tle_source": "Space-Track.org",
+  "center_frequency": null,
+  "observer": "lw2dtz",
+  "observation_frequency": 465987500,
+  "transmitter_unconfirmed": false,
+  "sat_id": "ZYIO-9572-5451-0893-4246",
+  "_local_waterfall_path": "/home/verdantfoster/strf-main/pipeline/data/waterfall/14383971.png",
+  "_local_metadata_path": "/home/verdantfoster/strf-main/pipeline/data/metadata/14383971.json",
+  "_local_image_width": 832,
+  "_local_image_height": 1603
+}

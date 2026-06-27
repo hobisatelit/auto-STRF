@@ -1,0 +1,81 @@
+{
+  "id": 14385350,
+  "start": "2026-06-26T18:55:49Z",
+  "end": "2026-06-26T19:00:33Z",
+  "ground_station": 4254,
+  "transmitter": "a5nA6sjzKTeqPgxoWQ4TyE",
+  "norad_cat_id": 49263,
+  "payload": "https://network-satnogs.freetls.fastly.net/media/data_obs/2026/6/26/18/14385350/satnogs_14385350_2026-06-26T18-55-49.ogg",
+  "waterfall": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385350/waterfall_14385350_2026-06-26T18-55-49.png",
+  "demoddata": [
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385350/data_14385350_2026-06-26T18-58-15"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385350/data_14385350_2026-06-26T18-58-25"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385350/data_14385350_2026-06-26T18-58-26"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385350/data_14385350_2026-06-26T18-58-28"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385350/data_14385350_2026-06-26T18-58-30"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385350/data_14385350_2026-06-26T18-57-58_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385350/data_14385350_2026-06-26T18-58-12_g0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/18/14385350/data_14385350_2026-06-26T18-58-13_g0"
+    }
+  ],
+  "station_name": "VU3IPU - Varun",
+  "station_lat": 12.991308,
+  "station_lng": 77.576969,
+  "station_alt": 919,
+  "vetted_status": "good",
+  "vetted_user": null,
+  "vetted_datetime": null,
+  "archived": false,
+  "archive_url": null,
+  "client_version": "2.1.2",
+  "client_metadata": "{\"radio\": {\"name\": \"gr-satnogs\", \"version\": null, \"parameters\": {\"mode\": \"GFSK\", \"soapy-rx-device\": \"driver=rtlsdr\", \"samp-rate-rx\": \"2.048e6\", \"rx-freq\": \"437250000\", \"file-path\": \"/tmp/.satnogs/data/receiving_satnogs_14385350_2026-06-26T18-55-49.out\", \"waterfall-file-path\": \"/tmp/.satnogs/data/receiving_waterfall_14385350_2026-06-26T18-55-49.dat\", \"decoded-data-file-path\": \"/tmp/.satnogs/data/data_14385350\", \"doppler-correction-per-sec\": null, \"lo-offset\": null, \"ppm\": \"0\", \"rigctl-host\": \"rigctld\", \"rigctl-port\": \"4532\", \"gain-mode\": \"Overall\", \"gain\": \"48.0\", \"antenna\": \"RX\", \"dev-args\": null, \"stream-args\": null, \"tune-args\": null, \"other-settings\": null, \"dc-removal\": null, \"bb-freq\": null, \"bw\": null, \"enable-iq-dump\": \"1\", \"iq-file-path\": \"/tmp/.satnogs/iq.raw\", \"udp-dump-host\": \"0.0.0.0\", \"udp-dump-port\": 57356, \"baud\": \"9600\"}}, \"latitude\": 12.991308, \"longitude\": 77.576969, \"elevation\": 919.0, \"frequency\": 437250000}",
+  "status": "good",
+  "waterfall_status": "unknown",
+  "waterfall_status_user": null,
+  "waterfall_status_datetime": null,
+  "rise_azimuth": 173.0,
+  "set_azimuth": 345.0,
+  "max_altitude": 74.0,
+  "transmitter_uuid": "a5nA6sjzKTeqPgxoWQ4TyE",
+  "transmitter_description": "Mode U - GFSK9k6 AX.25/G3RUH - SpaceQuest TRX-U",
+  "transmitter_type": "Transmitter",
+  "transmitter_uplink_low": null,
+  "transmitter_uplink_high": null,
+  "transmitter_uplink_drift": null,
+  "transmitter_downlink_low": 437250000,
+  "transmitter_downlink_high": null,
+  "transmitter_downlink_drift": null,
+  "transmitter_mode": "GFSK",
+  "transmitter_invert": false,
+  "transmitter_baud": 9600.0,
+  "transmitter_updated": "2021-09-22T14:34:42.551463Z",
+  "transmitter_status": "active",
+  "tle0": "0 CUTE-LASP",
+  "tle1": "1 49263U 21088D   26177.22423259  .00345656  50259-4  81257-3 0  9995",
+  "tle2": "2 49263  97.4157 277.4146 0007066 217.6534 142.4249 15.96841449263993",
+  "tle_source": "Space-Track.org",
+  "center_frequency": null,
+  "observer": "satcolintel5",
+  "observation_frequency": 437250000,
+  "transmitter_unconfirmed": false,
+  "sat_id": "YMFQ-1347-4330-8510-2436",
+  "_local_waterfall_path": "/home/verdantfoster/strf-main/pipeline/data/waterfall/14385350.png",
+  "_local_metadata_path": "/home/verdantfoster/strf-main/pipeline/data/metadata/14385350.json",
+  "_local_image_width": 832,
+  "_local_image_height": 1603
+}

@@ -1,0 +1,111 @@
+{
+  "id": 14381722,
+  "start": "2026-06-26T12:30:45Z",
+  "end": "2026-06-26T12:38:01Z",
+  "ground_station": 4044,
+  "transmitter": "VxMgySkd3Ya5nhNtwKjyq2",
+  "norad_cat_id": 63235,
+  "payload": "https://network-satnogs.freetls.fastly.net/media/data_obs/2026/6/26/12/14381722/satnogs_14381722_2026-06-26T12-30-45.ogg",
+  "waterfall": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14381722/waterfall_14381722_2026-06-26T12-30-45.png",
+  "demoddata": [
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14381722/data_14381722_2026-06-26T12-35-23_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14381722/data_14381722_2026-06-26T12-35-23_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14381722/data_14381722_2026-06-26T12-35-23_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14381722/data_14381722_2026-06-26T12-35-23"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14381722/data_14381722_2026-06-26T12-35-22_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14381722/data_14381722_2026-06-26T12-35-22"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14381722/data_14381722_2026-06-26T12-35-21_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14381722/data_14381722_2026-06-26T12-35-21"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14381722/data_14381722_2026-06-26T12-35-20_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14381722/data_14381722_2026-06-26T12-35-20"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14381722/data_14381722_2026-06-26T12-35-19"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14381722/data_14381722_2026-06-26T12-36-23_3"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14381722/data_14381722_2026-06-26T12-36-23_2"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14381722/data_14381722_2026-06-26T12-36-23_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14381722/data_14381722_2026-06-26T12-36-23"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14381722/data_14381722_2026-06-26T12-36-21"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14381722/data_14381722_2026-06-26T12-36-20_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14381722/data_14381722_2026-06-26T12-36-20"
+    }
+  ],
+  "station_name": "South Australia - UHF",
+  "station_lat": -33.9499962,
+  "station_lng": 138.6333308,
+  "station_alt": 390,
+  "vetted_status": "good",
+  "vetted_user": null,
+  "vetted_datetime": null,
+  "archived": false,
+  "archive_url": null,
+  "client_version": "1.9.3",
+  "client_metadata": "{\"radio\": {\"name\": \"gr-satnogs\", \"version\": \"v2.3-compat-xxx-v2.3.5.0\", \"parameters\": {\"soapy-rx-device\": \"driver=rtlsdr\", \"samp-rate-rx\": \"2.048e6\", \"rx-freq\": \"400496500\", \"file-path\": \"/tmp/.satnogs/data/receiving_satnogs_14381722_2026-06-26T12-30-45.out\", \"waterfall-file-path\": \"/tmp/.satnogs/data/receiving_waterfall_14381722_2026-06-26T12-30-45.dat\", \"decoded-data-file-path\": \"/tmp/.satnogs/data/data_14381722\", \"doppler-correction-per-sec\": null, \"lo-offset\": null, \"ppm\": null, \"rigctl-host\": \"rigctld\", \"rigctl-port\": \"4532\", \"gain-mode\": \"Overall\", \"gain\": \"40.2\", \"antenna\": \"RX\", \"dev-args\": null, \"stream-args\": null, \"tune-args\": null, \"other-settings\": null, \"dc-removal\": null, \"bb-freq\": null, \"bw\": null, \"enable-iq-dump\": \"0\", \"iq-file-path\": null, \"udp-dump-host\": null, \"udp-dump-port\": 57356, \"wpm\": null, \"baudrate\": \"4800\", \"framing\": \"ax25\"}}, \"latitude\": -33.9499962, \"longitude\": 138.6333308, \"elevation\": 390, \"frequency\": 400496500}",
+  "status": "good",
+  "waterfall_status": "unknown",
+  "waterfall_status_user": null,
+  "waterfall_status_datetime": null,
+  "rise_azimuth": 24.0,
+  "set_azimuth": 183.0,
+  "max_altitude": 60.0,
+  "transmitter_uuid": "VxMgySkd3Ya5nhNtwKjyq2",
+  "transmitter_description": "Mode U - GFSK4k8 - AX.25 - Telemetry",
+  "transmitter_type": "Transmitter",
+  "transmitter_uplink_low": null,
+  "transmitter_uplink_high": null,
+  "transmitter_uplink_drift": null,
+  "transmitter_downlink_low": 400500000,
+  "transmitter_downlink_high": null,
+  "transmitter_downlink_drift": -8739,
+  "transmitter_mode": "GFSK",
+  "transmitter_invert": false,
+  "transmitter_baud": 4800.0,
+  "transmitter_updated": "2025-07-14T22:30:11.800372Z",
+  "transmitter_status": "active",
+  "tle0": "0 OTP-2",
+  "tle1": "1 63235U 25052AB  26176.69691844  .00009391  00000-0  38921-3 0  9990",
+  "tle2": "2 63235  97.3868  68.9998 0007957 123.5955 236.6043 15.24079974 71166",
+  "tle_source": "Space-Track.org",
+  "center_frequency": null,
+  "observer": "macphersonrss",
+  "observation_frequency": 400496500,
+  "transmitter_unconfirmed": false,
+  "sat_id": "XBMS-1269-7435-8541-4310",
+  "_local_waterfall_path": "/home/verdantfoster/strf-main/pipeline/data/waterfall/14381722.png",
+  "_local_metadata_path": "/home/verdantfoster/strf-main/pipeline/data/metadata/14381722.json",
+  "_local_image_width": 823,
+  "_local_image_height": 1603
+}

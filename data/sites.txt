@@ -1,0 +1,2 @@
+# No ID   Latitude Longitude   Elev   Observer
+0001 AB   50.0000    6.0000    100    O.B. Server

@@ -1,0 +1,84 @@
+{
+  "id": 14383803,
+  "start": "2026-06-26T12:35:56Z",
+  "end": "2026-06-26T12:38:56Z",
+  "ground_station": 1864,
+  "transmitter": "QqiCLmuwoPjGo6zkoSyRxL",
+  "norad_cat_id": 64555,
+  "payload": "https://network-satnogs.freetls.fastly.net/media/data_obs/2026/6/26/12/14383803/satnogs_14383803_2026-06-26T12-35-56.ogg",
+  "waterfall": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383803/waterfall_14383803_2026-06-26T12-35-56.png",
+  "demoddata": [
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383803/data_14383803_2026-06-26T12-36-25_0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383803/data_14383803_2026-06-26T12-36-25"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383803/data_14383803_2026-06-26T12-36-24_0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383803/data_14383803_2026-06-26T12-36-24"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383803/data_14383803_2026-06-26T12-37-25"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383803/data_14383803_2026-06-26T12-38-28_0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383803/data_14383803_2026-06-26T12-38-28"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383803/data_14383803_2026-06-26T12-38-27_0"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/12/14383803/data_14383803_2026-06-26T12-38-27"
+    }
+  ],
+  "station_name": "SA2KNG Omni UHF/VHF",
+  "station_lat": 63.854,
+  "station_lng": 20.208,
+  "station_alt": 35,
+  "vetted_status": "good",
+  "vetted_user": null,
+  "vetted_datetime": null,
+  "archived": false,
+  "archive_url": null,
+  "client_version": "2.1.1",
+  "client_metadata": "{\"radio\": {\"name\": \"gr-satnogs\", \"version\": null, \"parameters\": {\"mode\": \"GMSK\", \"soapy-rx-device\": \"driver=rtlsdr\", \"samp-rate-rx\": \"2.048e+06\", \"rx-freq\": \"401520000\", \"file-path\": \"/tmp/.satnogs/data/receiving_satnogs_14383803_2026-06-26T12-35-56.out\", \"waterfall-file-path\": \"/tmp/.satnogs/data/receiving_waterfall_14383803_2026-06-26T12-35-56.dat\", \"decoded-data-file-path\": \"/tmp/.satnogs/data/data_14383803\", \"doppler-correction-per-sec\": null, \"lo-offset\": null, \"ppm\": \"-1\", \"rigctl-host\": \"rigctld\", \"rigctl-port\": \"4532\", \"gain-mode\": \"Overall\", \"gain\": \"3.7\", \"antenna\": \"RX\", \"dev-args\": null, \"stream-args\": null, \"tune-args\": null, \"other-settings\": null, \"dc-removal\": null, \"bb-freq\": null, \"bw\": null, \"enable-iq-dump\": \"0\", \"iq-file-path\": null, \"udp-dump-host\": \"0.0.0.0\", \"udp-dump-port\": 57356, \"baud\": \"4800\"}}, \"latitude\": 63.854, \"longitude\": 20.208, \"elevation\": 35.0, \"frequency\": 401520000}",
+  "status": "good",
+  "waterfall_status": "unknown",
+  "waterfall_status_user": null,
+  "waterfall_status_datetime": null,
+  "rise_azimuth": 30.0,
+  "set_azimuth": 180.0,
+  "max_altitude": 70.0,
+  "transmitter_uuid": "QqiCLmuwoPjGo6zkoSyRxL",
+  "transmitter_description": "Mode U - GMSK 4k8 AX.25 TLM",
+  "transmitter_type": "Transmitter",
+  "transmitter_uplink_low": null,
+  "transmitter_uplink_high": null,
+  "transmitter_uplink_drift": null,
+  "transmitter_downlink_low": 401520000,
+  "transmitter_downlink_high": null,
+  "transmitter_downlink_drift": null,
+  "transmitter_mode": "GMSK",
+  "transmitter_invert": false,
+  "transmitter_baud": 4800.0,
+  "transmitter_updated": "2025-06-20T14:18:03.669435Z",
+  "transmitter_status": "active",
+  "tle0": "0 CONNECTA IOT-10",
+  "tle1": "1 64555U 25135AD  26177.11001355  .00003318  00000-0  15523-3 0  9994",
+  "tle2": "2 64555  97.4690 292.0542 0000738  81.2066 278.9253 15.20454864 56216",
+  "tle_source": "Space-Track.org",
+  "center_frequency": null,
+  "observer": "knegge",
+  "observation_frequency": 401520000,
+  "transmitter_unconfirmed": false,
+  "sat_id": "OPSM-5371-6840-8894-7677",
+  "_local_waterfall_path": "/home/verdantfoster/strf-main/pipeline/data/waterfall/14383803.png",
+  "_local_metadata_path": "/home/verdantfoster/strf-main/pipeline/data/metadata/14383803.json",
+  "_local_image_width": 832,
+  "_local_image_height": 1603
+}

@@ -1,0 +1,87 @@
+{
+  "id": 14373459,
+  "start": "2026-06-26T19:24:11Z",
+  "end": "2026-06-26T19:32:49Z",
+  "ground_station": 3282,
+  "transmitter": "URhhV9R4FTpwpUJNGNuQWu",
+  "norad_cat_id": 57175,
+  "payload": "https://network-satnogs.freetls.fastly.net/media/data_obs/2026/6/26/19/14373459/satnogs_14373459_2026-06-26T19-24-11.ogg",
+  "waterfall": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14373459/waterfall_14373459_2026-06-26T19-24-11.png",
+  "demoddata": [
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14373459/data_14373459_2026-06-26T19-27-51"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14373459/data_14373459_2026-06-26T19-28-11"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14373459/data_14373459_2026-06-26T19-28-11_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14373459/data_14373459_2026-06-26T19-28-31"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14373459/data_14373459_2026-06-26T19-28-51"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14373459/data_14373459_2026-06-26T19-29-11"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14373459/data_14373459_2026-06-26T19-29-11_1"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14373459/data_14373459_2026-06-26T19-29-31"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14373459/data_14373459_2026-06-26T19-29-51"
+    },
+    {
+      "payload_demod": "https://s3.eu-central-1.wasabisys.com/satnogs-network/data_obs/2026/6/26/19/14373459/data_14373459_2026-06-26T19-30-19"
+    }
+  ],
+  "station_name": "ha7dcd and decent.org",
+  "station_lat": 47.51747,
+  "station_lng": 19.53215,
+  "station_alt": 175,
+  "vetted_status": "good",
+  "vetted_user": null,
+  "vetted_datetime": null,
+  "archived": false,
+  "archive_url": null,
+  "client_version": "1.8.1",
+  "client_metadata": "{\"radio\": {\"name\": \"gr-satnogs\", \"version\": \"v2.3-compat-xxx-v2.3.5.0\", \"parameters\": {\"soapy-rx-device\": \"driver=rtlsdr\", \"samp-rate-rx\": \"2.048e6\", \"rx-freq\": \"436990000\", \"file-path\": \"/tmp/.satnogs/data/receiving_satnogs_14373459_2026-06-26T19-24-11.out\", \"waterfall-file-path\": \"/tmp/.satnogs/data/receiving_waterfall_14373459_2026-06-26T19-24-11.dat\", \"decoded-data-file-path\": \"/tmp/.satnogs/data/data_14373459\", \"doppler-correction-per-sec\": null, \"lo-offset\": null, \"ppm\": null, \"rigctl-port\": \"4532\", \"gain-mode\": \"Overall\", \"gain\": \"15\", \"antenna\": \"RX\", \"dev-args\": null, \"stream-args\": null, \"tune-args\": null, \"other-settings\": null, \"dc-removal\": null, \"bb-freq\": null, \"bw\": null, \"enable-iq-dump\": \"0\", \"iq-file-path\": null, \"udp-dump-host\": null, \"udp-dump-port\": 57356, \"wpm\": null, \"baudrate\": \"9600\", \"framing\": \"ax25\"}}, \"latitude\": 47.51747, \"longitude\": 19.53215, \"elevation\": 175, \"frequency\": 436990000}",
+  "status": "good",
+  "waterfall_status": "unknown",
+  "waterfall_status_user": null,
+  "waterfall_status_datetime": null,
+  "rise_azimuth": 147.0,
+  "set_azimuth": 356.0,
+  "max_altitude": 43.0,
+  "transmitter_uuid": "URhhV9R4FTpwpUJNGNuQWu",
+  "transmitter_description": "Mode U 9k6 FSK AX.25",
+  "transmitter_type": "Transmitter",
+  "transmitter_uplink_low": null,
+  "transmitter_uplink_high": null,
+  "transmitter_uplink_drift": null,
+  "transmitter_downlink_low": 436990000,
+  "transmitter_downlink_high": null,
+  "transmitter_downlink_drift": null,
+  "transmitter_mode": "FSK",
+  "transmitter_invert": false,
+  "transmitter_baud": 9600.0,
+  "transmitter_updated": "2023-06-21T23:55:45.755238Z",
+  "transmitter_status": "active",
+  "tle0": "0 OBJECT K",
+  "tle1": "1 57175U 23091K   26177.27910117  .00014553  00000-0  51226-3 0  9998",
+  "tle2": "2 57175  97.5054 240.5776 0011123  87.1136 273.1377 15.29370760165699",
+  "tle_source": "Space-Track.org",
+  "center_frequency": null,
+  "observer": "eu_vitaly",
+  "observation_frequency": 436990000,
+  "transmitter_unconfirmed": false,
+  "sat_id": "PIHV-8715-3112-5892-6258",
+  "_local_waterfall_path": "/home/verdantfoster/strf-main/pipeline/data/waterfall/14373459.png",
+  "_local_metadata_path": "/home/verdantfoster/strf-main/pipeline/data/metadata/14373459.json",
+  "_local_image_width": 823,
+  "_local_image_height": 1603
+}
