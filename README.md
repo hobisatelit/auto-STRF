@@ -96,19 +96,58 @@ For WAV files exported from SatDump and SDR Console the `-P` options will automa
 
 The output spectrograms can be viewed and analysed using `rfplot`.
 
-Automated Pipeline (LAPAN-A2)
------------------------------
-This repository now includes a fully automated, headless background service (`pipeline/`) specifically designed to streamline LAPAN-A2 satellite tracking and TLE optimization.
+Automated STRF Pipeline
+-----------------------
+This repository includes a fully automated pipeline (`pipeline/`) to streamline SatNOGS data downloading, Doppler curve extraction, and TLE fitting using STRF's `rffit`.
 
-Key features include:
-* Headless extraction of Doppler curves from waterfall images using OpenCV.
-* Automatic rejection of terrestrial noise and interference based on shape validation.
-* End-to-end orbital element (TLE) optimization using the `rffit` global fitting engine.
-* Automated tracking data management and background scheduling via `cron`.
+### Installation
+From the root of the STRF repository:
+```bash
+bash pipeline/install.sh
+```
+The installer will create a virtual environment (`pipeline/venv/`), install Python dependencies, compile `rffit`, and create the necessary data/log directories.
 
-### Setting up the Pipeline
-To initialize the automated pipeline:
-1. Navigate to the `pipeline/` directory: `cd pipeline`
-2. Ensure the required Python dependencies are installed (e.g., `opencv-python`, `numpy`).
-3. Run the setup script to establish the background cron job: `./cron_setup.sh`
-4. The pipeline will now run automatically. Logs will be recorded in `pipeline/logs/`, and optimized TLEs and tracking data will be outputted to `pipeline/data/`.
+### Usage
+Run the pipeline using the Python executable from the virtual environment:
+
+**Full Automatic Mode**
+Download observations, extract curves, and fit TLEs without interactive menus:
+```bash
+pipeline/venv/bin/python pipeline/main.py --run-full --norad-id 40931 --n-observations 20 --min-elevation 30 --yes
+```
+
+**Step-by-Step Mode**
+```bash
+# Check system status
+pipeline/venv/bin/python pipeline/main.py --status
+
+# Download observations only
+pipeline/venv/bin/python pipeline/main.py --download --norad-id 40931 --n-observations 20
+
+# Extract unprocessed local waterfalls
+pipeline/venv/bin/python pipeline/main.py --extract
+
+# Fit all local .dat files using batch/headless rffit
+pipeline/venv/bin/python pipeline/main.py --fit
+
+# Generate a report from the last results
+pipeline/venv/bin/python pipeline/main.py --analyze
+```
+
+### Outputs
+Key output files generated in `pipeline/`:
+- `data/waterfall/{obs_id}.png` — Downloaded SatNOGS waterfalls
+- `data/metadata/{obs_id}.json` — Observation metadata
+- `data/doppler_curves/{obs_id}.dat` — Doppler data in STRF format
+- `data/doppler_curves/{obs_id}_debug.png` — Curve extraction debug overlays
+- `data/tle_output/{obs_id}_fitted.tle` — Automatically fitted TLEs
+- `logs/last_results.json` — Summary of the latest fitting results
+
+### Batch/Headless `rffit`
+This repository adds a batch mode to `rffit` for automated processing:
+```bash
+./rffit -B -d pipeline/data/doppler_curves/OBS.dat -c pipeline/data/tle_output/initial_40931.tle -i 40931 -s 9999 -o pipeline/data/tle_output/OBS_fitted.tle -a 256
+```
+The `-a` flag specifies the parameters to fit. The pipeline defaults to `256` (RAAN, mean anomaly, mean motion), while carrier frequency is always auto-fitted.
+
+> **Data Quality Note:** The automation relies on the quality of SatNOGS waterfalls. For noisy data or multi-signal images, inspect the `{obs_id}_debug.png` debug overlays and the RMSE values in `last_results.json` before using the fitted TLE for scientific purposes.
