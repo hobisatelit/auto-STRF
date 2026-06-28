@@ -89,9 +89,9 @@ def fetch_initial_tle(norad_id, output_path):
     output_path.parent.mkdir(parents=True, exist_ok=True)
     urls = [
         "https://amsat-id.org/tle.txt",
+        f"https://db.satnogs.org/api/tle/?format=3le&norad_cat_id={int(norad_id)}",
         f"https://www.space-track.org/basicspacedata/query/class/gp/NORAD_CAT_ID/{int(norad_id)}/orderby/TLE_LINE1%20ASC/format/tle",
         f"https://celestrak.org/NORAD/elements/gp.php?CATNR={int(norad_id)}&FORMAT=TLE",
-        f"https://celestrak.org/SATCAT/TLE.php?CATNR={int(norad_id)}",
     ]
     last_error = None
     for url in urls:
