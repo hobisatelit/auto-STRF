@@ -18,7 +18,7 @@ install_system_deps() {
   if command -v apt-get >/dev/null 2>&1; then
     echo "Mendeteksi Debian/Ubuntu. Menginstal dependensi sistem..."
     sudo apt-get update
-    sudo apt-get install -y python3 python3-pip python3-venv git curl wget gcc gfortran make libopencv-dev libpng-dev libx11-dev libgsl-dev libfftw3-dev libsox-dev pgplot5 pgplot5-dev || return 1
+    sudo apt-get install -y python3 python3-pip python3-venv git curl wget gcc gfortran make libopencv-dev libpng-dev libx11-dev libgsl-dev libfftw3-dev libsox-dev pgplot5* || return 1
   elif command -v pacman >/dev/null 2>&1; then
     echo "Mendeteksi Arch Linux. Menginstal dependensi sistem..."
     sudo pacman -Sy --needed python python-pip git curl wget gcc gcc-fortran make opencv gsl fftw libpng sox libx11 || return 1
