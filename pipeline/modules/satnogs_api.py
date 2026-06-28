@@ -118,13 +118,9 @@ def get_observations(norad_id, station_id=None, min_elevation=30, limit=20):
     """Ambil daftar observasi SatNOGS berstatus baik untuk NORAD tertentu."""
     endpoint_candidates = [
         urljoin(config.SATNOGS_NETWORK_API_BASE.rstrip("/") + "/", "observations/"),
-        urljoin(config.SATNOGS_API_BASE.rstrip("/") + "/", "observations/"),
     ]
     filter_candidates = [
-        {"satellite__norad_cat_id": norad_id},
-        {"satellite_norad_cat_id": norad_id},
         {"norad_cat_id": norad_id},
-        {"norad": norad_id},
     ]
 
     last_errors = []
