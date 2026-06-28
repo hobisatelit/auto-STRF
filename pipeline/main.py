@@ -93,7 +93,7 @@ def run_automated_pipeline():
         obs_id = str(obs.get("id") or obs.get("observation_id"))
         if obs_id in processed_obs:
             continue
-            
+        logger.info("==================================================")    
         logger.info(f"Memproses observasi baru: {obs_id}")
         
         # 2. Download waterfall and metadata
